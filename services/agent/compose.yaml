@@ -1,0 +1,7 @@
+services:
+  qdrant:
+    image: qdrant/qdrant:v1.19.1
+    ports:
+      - "127.0.0.1:6336:6333"
+    volumes:
+      - ../../.agent-data/qdrant-server:/qdrant/storage

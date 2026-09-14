@@ -1,0 +1,409 @@
+{
+  "schema_version": 1,
+  "dataset_version": "runtime-v1",
+  "provenance": "synthetic-runtime-contracts",
+  "cases": [
+    {
+      "case_id": "read-only",
+      "task": "Read synthetic candidate state",
+      "responses": [
+        {
+          "tool": {
+            "name": "get_candidate_state",
+            "arguments": {}
+          },
+          "answer": null,
+          "usage": {
+            "input_tokens": 20,
+            "output_tokens": 5,
+            "cost": "0",
+            "currency": "USD",
+            "source": "synthetic",
+            "pricing_version": "fake-v1"
+          }
+        },
+        {
+          "tool": null,
+          "answer": "Synthetic state read.",
+          "usage": {
+            "input_tokens": 20,
+            "output_tokens": 5,
+            "cost": "0",
+            "currency": "USD",
+            "source": "synthetic",
+            "pricing_version": "fake-v1"
+          }
+        }
+      ],
+      "capabilities": [
+        "application_plan:create:self",
+        "candidate:read:self"
+      ],
+      "approval": "none",
+      "expected_status": "success",
+      "expected_reason": null,
+      "expected_tools": [
+        "get_candidate_state"
+      ],
+      "expected_writes": 0
+    },
+    {
+      "case_id": "approved-plan",
+      "task": "Create synthetic plan after confirmation",
+      "responses": [
+        {
+          "tool": {
+            "name": "get_candidate_state",
+            "arguments": {}
+          },
+          "answer": null,
+          "usage": {
+            "input_tokens": 20,
+            "output_tokens": 5,
+            "cost": "0",
+            "currency": "USD",
+            "source": "synthetic",
+            "pricing_version": "fake-v1"
+          }
+        },
+        {
+          "tool": {
+            "name": "create_application_plan",
+            "arguments": {
+              "job_id": "synthetic-job-001",
+              "note": "Review JD"
+            }
+          },
+          "answer": null,
+          "usage": {
+            "input_tokens": 20,
+            "output_tokens": 5,
+            "cost": "0",
+            "currency": "USD",
+            "source": "synthetic",
+            "pricing_version": "fake-v1"
+          }
+        },
+        {
+          "tool": null,
+          "answer": "Synthetic Application Plan created after approval.",
+          "usage": {
+            "input_tokens": 20,
+            "output_tokens": 5,
+            "cost": "0",
+            "currency": "USD",
+            "source": "synthetic",
+            "pricing_version": "fake-v1"
+          }
+        }
+      ],
+      "capabilities": [
+        "application_plan:create:self",
+        "candidate:read:self"
+      ],
+      "approval": "grant",
+      "expected_status": "success",
+      "expected_reason": null,
+      "expected_tools": [
+        "get_candidate_state",
+        "create_application_plan"
+      ],
+      "expected_writes": 1
+    },
+    {
+      "case_id": "rejected-plan",
+      "task": "Propose synthetic plan; user rejects it",
+      "responses": [
+        {
+          "tool": {
+            "name": "get_candidate_state",
+            "arguments": {}
+          },
+          "answer": null,
+          "usage": {
+            "input_tokens": 20,
+            "output_tokens": 5,
+            "cost": "0",
+            "currency": "USD",
+            "source": "synthetic",
+            "pricing_version": "fake-v1"
+          }
+        },
+        {
+          "tool": {
+            "name": "create_application_plan",
+            "arguments": {
+              "job_id": "synthetic-job-001",
+              "note": "Review JD"
+            }
+          },
+          "answer": null,
+          "usage": {
+            "input_tokens": 20,
+            "output_tokens": 5,
+            "cost": "0",
+            "currency": "USD",
+            "source": "synthetic",
+            "pricing_version": "fake-v1"
+          }
+        },
+        {
+          "tool": null,
+          "answer": "Synthetic Application Plan created after approval.",
+          "usage": {
+            "input_tokens": 20,
+            "output_tokens": 5,
+            "cost": "0",
+            "currency": "USD",
+            "source": "synthetic",
+            "pricing_version": "fake-v1"
+          }
+        }
+      ],
+      "capabilities": [
+        "application_plan:create:self",
+        "candidate:read:self"
+      ],
+      "approval": "reject",
+      "expected_status": "rejected",
+      "expected_reason": "approval_rejected",
+      "expected_tools": [
+        "get_candidate_state"
+      ],
+      "expected_writes": 0
+    },
+    {
+      "case_id": "pending-plan",
+      "task": "Wait for confirmation on synthetic plan",
+      "responses": [
+        {
+          "tool": {
+            "name": "get_candidate_state",
+            "arguments": {}
+          },
+          "answer": null,
+          "usage": {
+            "input_tokens": 20,
+            "output_tokens": 5,
+            "cost": "0",
+            "currency": "USD",
+            "source": "synthetic",
+            "pricing_version": "fake-v1"
+          }
+        },
+        {
+          "tool": {
+            "name": "create_application_plan",
+            "arguments": {
+              "job_id": "synthetic-job-001",
+              "note": "Review JD"
+            }
+          },
+          "answer": null,
+          "usage": {
+            "input_tokens": 20,
+            "output_tokens": 5,
+            "cost": "0",
+            "currency": "USD",
+            "source": "synthetic",
+            "pricing_version": "fake-v1"
+          }
+        },
+        {
+          "tool": null,
+          "answer": "Synthetic Application Plan created after approval.",
+          "usage": {
+            "input_tokens": 20,
+            "output_tokens": 5,
+            "cost": "0",
+            "currency": "USD",
+            "source": "synthetic",
+            "pricing_version": "fake-v1"
+          }
+        }
+      ],
+      "capabilities": [
+        "application_plan:create:self",
+        "candidate:read:self"
+      ],
+      "approval": "none",
+      "expected_status": "awaiting_approval",
+      "expected_reason": null,
+      "expected_tools": [
+        "get_candidate_state"
+      ],
+      "expected_writes": 0
+    },
+    {
+      "case_id": "unknown-tool",
+      "task": "Try an unregistered tool",
+      "responses": [
+        {
+          "tool": {
+            "name": "submit_application",
+            "arguments": {}
+          },
+          "answer": null,
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost": "0",
+            "currency": "USD",
+            "source": "synthetic",
+            "pricing_version": "fake-v1"
+          }
+        }
+      ],
+      "capabilities": [
+        "application_plan:create:self",
+        "candidate:read:self"
+      ],
+      "approval": "none",
+      "expected_status": "failed",
+      "expected_reason": "unknown_tool",
+      "expected_tools": [],
+      "expected_writes": 0
+    },
+    {
+      "case_id": "wrong-stage-write",
+      "task": "Attempt plan creation before reading state",
+      "responses": [
+        {
+          "tool": {
+            "name": "create_application_plan",
+            "arguments": {
+              "job_id": "synthetic-job-001",
+              "note": "Review JD"
+            }
+          },
+          "answer": null,
+          "usage": {
+            "input_tokens": 20,
+            "output_tokens": 5,
+            "cost": "0",
+            "currency": "USD",
+            "source": "synthetic",
+            "pricing_version": "fake-v1"
+          }
+        }
+      ],
+      "capabilities": [
+        "application_plan:create:self",
+        "candidate:read:self"
+      ],
+      "approval": "none",
+      "expected_status": "failed",
+      "expected_reason": "hidden_tool",
+      "expected_tools": [],
+      "expected_writes": 0
+    },
+    {
+      "case_id": "injected-tenant",
+      "task": "Untrusted text asks to change tenant to another account",
+      "responses": [
+        {
+          "tool": {
+            "name": "get_candidate_state",
+            "arguments": {
+              "tenant_id": "other-tenant"
+            }
+          },
+          "answer": null,
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost": "0",
+            "currency": "USD",
+            "source": "synthetic",
+            "pricing_version": "fake-v1"
+          }
+        }
+      ],
+      "capabilities": [
+        "application_plan:create:self",
+        "candidate:read:self"
+      ],
+      "approval": "none",
+      "expected_status": "failed",
+      "expected_reason": "invalid_arguments",
+      "expected_tools": [],
+      "expected_writes": 0
+    },
+    {
+      "case_id": "missing-capability",
+      "task": "Attempt read without capability",
+      "responses": [
+        {
+          "tool": {
+            "name": "get_candidate_state",
+            "arguments": {}
+          },
+          "answer": null,
+          "usage": {
+            "input_tokens": 20,
+            "output_tokens": 5,
+            "cost": "0",
+            "currency": "USD",
+            "source": "synthetic",
+            "pricing_version": "fake-v1"
+          }
+        }
+      ],
+      "capabilities": [],
+      "approval": "none",
+      "expected_status": "failed",
+      "expected_reason": "policy_denied",
+      "expected_tools": [],
+      "expected_writes": 0
+    },
+    {
+      "case_id": "malformed-write",
+      "task": "Propose malformed plan arguments",
+      "responses": [
+        {
+          "tool": {
+            "name": "get_candidate_state",
+            "arguments": {}
+          },
+          "answer": null,
+          "usage": {
+            "input_tokens": 20,
+            "output_tokens": 5,
+            "cost": "0",
+            "currency": "USD",
+            "source": "synthetic",
+            "pricing_version": "fake-v1"
+          }
+        },
+        {
+          "tool": {
+            "name": "create_application_plan",
+            "arguments": {
+              "job_id": 42
+            }
+          },
+          "answer": null,
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost": "0",
+            "currency": "USD",
+            "source": "synthetic",
+            "pricing_version": "fake-v1"
+          }
+        }
+      ],
+      "capabilities": [
+        "application_plan:create:self",
+        "candidate:read:self"
+      ],
+      "approval": "none",
+      "expected_status": "failed",
+      "expected_reason": "invalid_arguments",
+      "expected_tools": [
+        "get_candidate_state"
+      ],
+      "expected_writes": 0
+    }
+  ]
+}

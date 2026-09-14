@@ -1,0 +1,354 @@
+[
+  {
+    "case_id": "official-01-3",
+    "request": {
+      "query": "4+ years in investment banking, management consulting, corporate development, growth, or startup operations roles, ideally with exposure to a frontier technology business",
+      "hard_constraints": {
+        "cities": [],
+        "recruitment_types": [],
+        "excluded_companies": [],
+        "excluded_terms": [],
+        "max_age_days": 90
+      },
+      "soft_preferences": {
+        "company_types": [],
+        "cities": [],
+        "negative_duties": [],
+        "max_per_company": 100
+      },
+      "top_k": 100,
+      "candidate_profile_version": "none"
+    },
+    "reason": "只列投行、咨询、企业发展或运营经历；需确认目标职责和年限含义"
+  },
+  {
+    "case_id": "official-02-3",
+    "request": {
+      "query": "Strong software engineering fundamentals with production experience in Python and PyTorch",
+      "hard_constraints": {
+        "cities": [],
+        "recruitment_types": [],
+        "excluded_companies": [],
+        "excluded_terms": [],
+        "max_age_days": 90
+      },
+      "soft_preferences": {
+        "company_types": [],
+        "cities": [],
+        "negative_duties": [],
+        "max_per_company": 100
+      },
+      "top_k": 100,
+      "candidate_profile_version": "none"
+    },
+    "reason": "只列 Python/PyTorch 与软件经验；无法区分模型研究、训练基础设施等方向"
+  },
+  {
+    "case_id": "official-03-1",
+    "request": {
+      "query": "Data Strategy Associate",
+      "hard_constraints": {
+        "cities": [],
+        "recruitment_types": [],
+        "excluded_companies": [],
+        "excluded_terms": [],
+        "max_age_days": 90
+      },
+      "soft_preferences": {
+        "company_types": [],
+        "cities": [],
+        "negative_duties": [],
+        "max_per_company": 100
+      },
+      "top_k": 100,
+      "candidate_profile_version": "none"
+    },
+    "reason": "Data Strategy Associate 未明确数据运营、数据分析还是数据策略研究；不能借原正例反推查询意图"
+  },
+  {
+    "case_id": "official-03-3",
+    "request": {
+      "query": "3-5 years in program management (especially for operations), consulting, investment banking, startup project management, or similar roles",
+      "hard_constraints": {
+        "cities": [],
+        "recruitment_types": [],
+        "excluded_companies": [],
+        "excluded_terms": [],
+        "max_age_days": 90
+      },
+      "soft_preferences": {
+        "company_types": [],
+        "cities": [],
+        "negative_duties": [],
+        "max_per_company": 100
+      },
+      "top_k": 100,
+      "candidate_profile_version": "none"
+    },
+    "reason": "只列项目管理、咨询或投行经历；需确认岗位目标"
+  },
+  {
+    "case_id": "official-03-4",
+    "request": {
+      "query": "Find roles focused on Data Strategy Associate",
+      "hard_constraints": {
+        "cities": [],
+        "recruitment_types": [],
+        "excluded_companies": [],
+        "excluded_terms": [],
+        "max_age_days": 90
+      },
+      "soft_preferences": {
+        "company_types": [],
+        "cities": [],
+        "negative_duties": [],
+        "max_per_company": 100
+      },
+      "top_k": 100,
+      "candidate_profile_version": "none"
+    },
+    "reason": "Data Strategy Associate 未明确数据运营、数据分析还是数据策略研究；不能借原正例反推查询意图"
+  },
+  {
+    "case_id": "official-05-3",
+    "request": {
+      "query": "Strong software engineering fundamentals",
+      "hard_constraints": {
+        "cities": [],
+        "recruitment_types": [],
+        "excluded_companies": [],
+        "excluded_terms": [],
+        "max_age_days": 90
+      },
+      "soft_preferences": {
+        "company_types": [],
+        "cities": [],
+        "negative_duties": [],
+        "max_per_company": 100
+      },
+      "top_k": 100,
+      "candidate_profile_version": "none"
+    },
+    "reason": "只有软件工程基础要求，未指定任何工作方向"
+  },
+  {
+    "case_id": "official-09-3",
+    "request": {
+      "query": "Extensive experience in production-level software and ML engineering best practices.",
+      "hard_constraints": {
+        "cities": [],
+        "recruitment_types": [],
+        "excluded_companies": [],
+        "excluded_terms": [],
+        "max_age_days": 90
+      },
+      "soft_preferences": {
+        "company_types": [],
+        "cities": [],
+        "negative_duties": [],
+        "max_per_company": 100
+      },
+      "top_k": 100,
+      "candidate_profile_version": "none"
+    },
+    "reason": "只有生产级软件/ML 工程经验，未指定感知或其他 ML 工作"
+  },
+  {
+    "case_id": "official-13-2",
+    "request": {
+      "query": "Optimize training performance for a 100B+ parameter models across 100k+ GPUs.",
+      "hard_constraints": {
+        "cities": [],
+        "recruitment_types": [],
+        "excluded_companies": [],
+        "excluded_terms": [],
+        "max_age_days": 90
+      },
+      "soft_preferences": {
+        "company_types": [],
+        "cities": [],
+        "negative_duties": [],
+        "max_per_company": 100
+      },
+      "top_k": 100,
+      "candidate_profile_version": "none"
+    },
+    "reason": "明确提及 100B+ 参数和 100k+ GPU；需确认数字是硬要求还是规模示意，其他训练岗缺少规模证据"
+  },
+  {
+    "case_id": "official-13-3",
+    "request": {
+      "query": "Bachelor's or Master's degree in Computer Science, Computer/Electrical Engineering, or a related field",
+      "hard_constraints": {
+        "cities": [],
+        "recruitment_types": [],
+        "excluded_companies": [],
+        "excluded_terms": [],
+        "max_age_days": 90
+      },
+      "soft_preferences": {
+        "company_types": [],
+        "cities": [],
+        "negative_duties": [],
+        "max_per_company": 100
+      },
+      "top_k": 100,
+      "candidate_profile_version": "none"
+    },
+    "reason": "只有学历和专业要求，不能推断训练性能岗位"
+  },
+  {
+    "case_id": "official-13-5",
+    "request": {
+      "query": "岗位职责匹配：Optimize training performance for a 100B+ parameter models across 100k+ GPUs.",
+      "hard_constraints": {
+        "cities": [],
+        "recruitment_types": [],
+        "excluded_companies": [],
+        "excluded_terms": [],
+        "max_age_days": 90
+      },
+      "soft_preferences": {
+        "company_types": [],
+        "cities": [],
+        "negative_duties": [],
+        "max_per_company": 100
+      },
+      "top_k": 100,
+      "candidate_profile_version": "none"
+    },
+    "reason": "明确提及 100B+ 参数和 100k+ GPU；需确认数字是硬要求还是规模示意，其他训练岗缺少规模证据"
+  },
+  {
+    "case_id": "official-15-3",
+    "request": {
+      "query": "Excellent physical coordination, spatial awareness, and focus",
+      "hard_constraints": {
+        "cities": [],
+        "recruitment_types": [],
+        "excluded_companies": [],
+        "excluded_terms": [],
+        "max_age_days": 90
+      },
+      "soft_preferences": {
+        "company_types": [],
+        "cities": [],
+        "negative_duties": [],
+        "max_per_company": 100
+      },
+      "top_k": 100,
+      "candidate_profile_version": "none"
+    },
+    "reason": "只有身体协调、空间感和专注力，未指定职业或采集任务"
+  },
+  {
+    "case_id": "official-16-3",
+    "request": {
+      "query": "Able to perform repetitive standing, walking, lifting, reaching, and full-range limb motions required for motion-capture across an 8+ hour shift",
+      "hard_constraints": {
+        "cities": [],
+        "recruitment_types": [],
+        "excluded_companies": [],
+        "excluded_terms": [],
+        "max_age_days": 90
+      },
+      "soft_preferences": {
+        "company_types": [],
+        "cities": [],
+        "negative_duties": [],
+        "max_per_company": 100
+      },
+      "top_k": 100,
+      "candidate_profile_version": "none"
+    },
+    "reason": "只有长期重复动作的体能要求，未明确要找何种工作"
+  },
+  {
+    "case_id": "official-17-3",
+    "request": {
+      "query": "Willing and able to travel throughout the US",
+      "hard_constraints": {
+        "cities": [],
+        "recruitment_types": [],
+        "excluded_companies": [],
+        "excluded_terms": [],
+        "max_age_days": 90
+      },
+      "soft_preferences": {
+        "company_types": [],
+        "cities": [],
+        "negative_duties": [],
+        "max_per_company": 100
+      },
+      "top_k": 100,
+      "candidate_profile_version": "none"
+    },
+    "reason": "只有全美出差意愿，未指定职业"
+  },
+  {
+    "case_id": "official-18-3",
+    "request": {
+      "query": "5-10 years in Operations roles at startups and/or global corporations",
+      "hard_constraints": {
+        "cities": [],
+        "recruitment_types": [],
+        "excluded_companies": [],
+        "excluded_terms": [],
+        "max_age_days": 90
+      },
+      "soft_preferences": {
+        "company_types": [],
+        "cities": [],
+        "negative_duties": [],
+        "max_per_company": 100
+      },
+      "top_k": 100,
+      "candidate_profile_version": "none"
+    },
+    "reason": "只有初创/跨国企业运营年限，未明确扩张还是其他运营工作"
+  },
+  {
+    "case_id": "official-19-3",
+    "request": {
+      "query": "5+ years of industry experience.",
+      "hard_constraints": {
+        "cities": [],
+        "recruitment_types": [],
+        "excluded_companies": [],
+        "excluded_terms": [],
+        "max_age_days": 90
+      },
+      "soft_preferences": {
+        "company_types": [],
+        "cities": [],
+        "negative_duties": [],
+        "max_per_company": 100
+      },
+      "top_k": 100,
+      "candidate_profile_version": "none"
+    },
+    "reason": "只有 5 年以上行业经验，未指定行业和职责"
+  },
+  {
+    "case_id": "official-22-3",
+    "request": {
+      "query": "4+ years of industry experience.",
+      "hard_constraints": {
+        "cities": [],
+        "recruitment_types": [],
+        "excluded_companies": [],
+        "excluded_terms": [],
+        "max_age_days": 90
+      },
+      "soft_preferences": {
+        "company_types": [],
+        "cities": [],
+        "negative_duties": [],
+        "max_per_company": 100
+      },
+      "top_k": 100,
+      "candidate_profile_version": "none"
+    },
+    "reason": "只有 4 年以上行业经验，未指定行业和职责"
+  }
+]

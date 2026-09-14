@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "GetOffers 招聘表单助手",
+  "version": "0.2.2",
+  "description": "从本地简历资料中识别招聘表单字段，只填写高置信度内容，并始终保留人工复核与最终提交。",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_title": "GetOffers 招聘表单助手",
+    "default_popup": "popup.html"
+  }
+}

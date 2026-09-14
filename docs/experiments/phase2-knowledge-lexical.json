@@ -1,0 +1,907 @@
+{
+  "schema_version": 1,
+  "dataset_version": "knowledge-v1-synthetic-2026-09-06",
+  "dataset_hash": "0caa2791277414e4b2e782bfba57602bbe499351ecbe8445f0aa78bc265bf96e",
+  "source_kind": "synthetic",
+  "document_count": 12,
+  "query_count": 24,
+  "parsing": [
+    {
+      "id": "retrieval",
+      "source_sha256": "ef7c0eb1a64ca8c9f2419fc7b0eba3b20fd97cfa692c5b870a703ace522d0c23",
+      "node_count": 2,
+      "deterministic": true,
+      "preserved_quotes": true,
+      "locator_coverage": 1,
+      "duration_ms": 0.4927502013742924
+    },
+    {
+      "id": "vision",
+      "source_sha256": "40edfba8914767c66b1c54644f17314c2f95b942aca4335217ddae9bad726857",
+      "node_count": 1,
+      "deterministic": true,
+      "preserved_quotes": true,
+      "locator_coverage": 1,
+      "duration_ms": 0.1055840402841568
+    },
+    {
+      "id": "quantization",
+      "source_sha256": "f958a8a234dcee19a660022fa5e41485580b4a37ff5bfcddf46679ba3df8a21d",
+      "node_count": 2,
+      "deterministic": true,
+      "preserved_quotes": true,
+      "locator_coverage": 1,
+      "duration_ms": 0.24508312344551086
+    },
+    {
+      "id": "memory",
+      "source_sha256": "3ef319a14db98881238a37c4dd29d63a5486d4c16a52eca4d16152ca8eb5d0b7",
+      "node_count": 1,
+      "deterministic": true,
+      "preserved_quotes": true,
+      "locator_coverage": 1,
+      "duration_ms": 0.041458290070295334
+    },
+    {
+      "id": "robot",
+      "source_sha256": "339dbaf3093df1712ba1a19ee137341586d0c4be72c2976bcbc20b99e3527def",
+      "node_count": 2,
+      "deterministic": true,
+      "preserved_quotes": true,
+      "locator_coverage": 1,
+      "duration_ms": 0.2299589104950428
+    },
+    {
+      "id": "timeseries",
+      "source_sha256": "9910250b103089130cf020e1c2cc5b9c16673d42ad57979cb66c42847900ef5f",
+      "node_count": 1,
+      "deterministic": true,
+      "preserved_quotes": true,
+      "locator_coverage": 1,
+      "duration_ms": 0.1177499070763588
+    },
+    {
+      "id": "speech",
+      "source_sha256": "cc09a10333cff69e58b56be4f7c553344d8177e27b516f981f83c535e9aebbec",
+      "node_count": 2,
+      "deterministic": true,
+      "preserved_quotes": true,
+      "locator_coverage": 1,
+      "duration_ms": 0.21462468430399895
+    },
+    {
+      "id": "ranking",
+      "source_sha256": "5b987f0d4f3b3516aa955e64f3a5d1b1b968caa8022c6721d7810ba3b2567fa1",
+      "node_count": 1,
+      "deterministic": true,
+      "preserved_quotes": true,
+      "locator_coverage": 1,
+      "duration_ms": 0.0400422140955925
+    },
+    {
+      "id": "diffusion",
+      "source_sha256": "84043f32c15158e391d845e5fbac0d0ab950a87548f71f9270256d45734e0c71",
+      "node_count": 2,
+      "deterministic": true,
+      "preserved_quotes": true,
+      "locator_coverage": 1,
+      "duration_ms": 0.2187499776482582
+    },
+    {
+      "id": "compiler",
+      "source_sha256": "849fa0c6dc4a8d9d70cbaa8e9289499d4f4b66f090b36cf30b15fabfaf350df5",
+      "node_count": 1,
+      "deterministic": true,
+      "preserved_quotes": true,
+      "locator_coverage": 1,
+      "duration_ms": 0.03474997356534004
+    },
+    {
+      "id": "storage",
+      "source_sha256": "60c95b56e4ea5e87a71d1b0206d19ce1f844c41671624293a58e4c33c28213e9",
+      "node_count": 2,
+      "deterministic": true,
+      "preserved_quotes": true,
+      "locator_coverage": 1,
+      "duration_ms": 0.21895905956625938
+    },
+    {
+      "id": "interview",
+      "source_sha256": "4cd0902fe1341a6bc16829b5e550770a78c460fc95a1e24d94bdf4326482acb6",
+      "node_count": 1,
+      "deterministic": true,
+      "preserved_quotes": true,
+      "locator_coverage": 1,
+      "duration_ms": 0.03141630440950394
+    }
+  ],
+  "reports": [
+    {
+      "mode": "lexical",
+      "cases": [
+        {
+          "case_id": "retrieval-1",
+          "ranked_evidence_ids": [
+            "741dae30abc2440c7f17efef5f8a4753076fcc32ab9c4134a5d36e7b3d117f6f",
+            "7ab406a4df309b6f7474a720cbcb2375431ce49c05f66d06191c5851c7609004",
+            "f3c0761cd0aefa0ae1abfe5d151994ca5a502000a3e767917b781dd9bd42abd5"
+          ],
+          "expected_evidence_ids": [
+            "7ab406a4df309b6f7474a720cbcb2375431ce49c05f66d06191c5851c7609004"
+          ],
+          "metrics": {
+            "recall_at_5": 1.0,
+            "precision_at_5": 0.2,
+            "ndcg_at_5": 0.6309297535714575,
+            "recall_at_10": 1.0,
+            "precision_at_10": 0.1,
+            "ndcg_at_10": 0.6309297535714575,
+            "recall_at_20": 1.0,
+            "precision_at_20": 0.05,
+            "ndcg_at_20": 0.6309297535714575,
+            "recall_at_50": 1.0,
+            "precision_at_50": 0.02,
+            "ndcg_at_50": 0.6309297535714575,
+            "recall_at_100": 1.0,
+            "precision_at_100": 0.01,
+            "ndcg_at_100": 0.6309297535714575,
+            "mrr": 0.5
+          },
+          "citation_valid": true,
+          "duration_ms": 2.2199582308530807,
+          "config_hash": "b0743d7c209167e7a73298b104cf532e2aa20b75ee033cce807f6fc4856b0a41"
+        },
+        {
+          "case_id": "retrieval-2",
+          "ranked_evidence_ids": [
+            "7ab406a4df309b6f7474a720cbcb2375431ce49c05f66d06191c5851c7609004"
+          ],
+          "expected_evidence_ids": [
+            "7ab406a4df309b6f7474a720cbcb2375431ce49c05f66d06191c5851c7609004"
+          ],
+          "metrics": {
+            "recall_at_5": 1.0,
+            "precision_at_5": 0.2,
+            "ndcg_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "precision_at_10": 0.1,
+            "ndcg_at_10": 1.0,
+            "recall_at_20": 1.0,
+            "precision_at_20": 0.05,
+            "ndcg_at_20": 1.0,
+            "recall_at_50": 1.0,
+            "precision_at_50": 0.02,
+            "ndcg_at_50": 1.0,
+            "recall_at_100": 1.0,
+            "precision_at_100": 0.01,
+            "ndcg_at_100": 1.0,
+            "mrr": 1.0
+          },
+          "citation_valid": true,
+          "duration_ms": 1.2996247969567776,
+          "config_hash": "b0743d7c209167e7a73298b104cf532e2aa20b75ee033cce807f6fc4856b0a41"
+        },
+        {
+          "case_id": "vision-1",
+          "ranked_evidence_ids": [
+            "d19ba2aef06d991ef2cb9d386b3cc8c54139f59f4e2f3b7fd63fb4d38c65c5a3"
+          ],
+          "expected_evidence_ids": [
+            "d19ba2aef06d991ef2cb9d386b3cc8c54139f59f4e2f3b7fd63fb4d38c65c5a3"
+          ],
+          "metrics": {
+            "recall_at_5": 1.0,
+            "precision_at_5": 0.2,
+            "ndcg_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "precision_at_10": 0.1,
+            "ndcg_at_10": 1.0,
+            "recall_at_20": 1.0,
+            "precision_at_20": 0.05,
+            "ndcg_at_20": 1.0,
+            "recall_at_50": 1.0,
+            "precision_at_50": 0.02,
+            "ndcg_at_50": 1.0,
+            "recall_at_100": 1.0,
+            "precision_at_100": 0.01,
+            "ndcg_at_100": 1.0,
+            "mrr": 1.0
+          },
+          "citation_valid": true,
+          "duration_ms": 2.0084157586097717,
+          "config_hash": "b0743d7c209167e7a73298b104cf532e2aa20b75ee033cce807f6fc4856b0a41"
+        },
+        {
+          "case_id": "vision-2",
+          "ranked_evidence_ids": [
+            "d19ba2aef06d991ef2cb9d386b3cc8c54139f59f4e2f3b7fd63fb4d38c65c5a3"
+          ],
+          "expected_evidence_ids": [
+            "d19ba2aef06d991ef2cb9d386b3cc8c54139f59f4e2f3b7fd63fb4d38c65c5a3"
+          ],
+          "metrics": {
+            "recall_at_5": 1.0,
+            "precision_at_5": 0.2,
+            "ndcg_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "precision_at_10": 0.1,
+            "ndcg_at_10": 1.0,
+            "recall_at_20": 1.0,
+            "precision_at_20": 0.05,
+            "ndcg_at_20": 1.0,
+            "recall_at_50": 1.0,
+            "precision_at_50": 0.02,
+            "ndcg_at_50": 1.0,
+            "recall_at_100": 1.0,
+            "precision_at_100": 0.01,
+            "ndcg_at_100": 1.0,
+            "mrr": 1.0
+          },
+          "citation_valid": true,
+          "duration_ms": 1.2392913922667503,
+          "config_hash": "b0743d7c209167e7a73298b104cf532e2aa20b75ee033cce807f6fc4856b0a41"
+        },
+        {
+          "case_id": "quantization-1",
+          "ranked_evidence_ids": [
+            "5625010314b2fe31647f1980a4775077ce717d6761043bc8086179643eb15bbe",
+            "ae7f65895958d3d4aeeb816426ab5270319ad86cfaee114215fb73b3c9b1e752"
+          ],
+          "expected_evidence_ids": [
+            "5625010314b2fe31647f1980a4775077ce717d6761043bc8086179643eb15bbe"
+          ],
+          "metrics": {
+            "recall_at_5": 1.0,
+            "precision_at_5": 0.2,
+            "ndcg_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "precision_at_10": 0.1,
+            "ndcg_at_10": 1.0,
+            "recall_at_20": 1.0,
+            "precision_at_20": 0.05,
+            "ndcg_at_20": 1.0,
+            "recall_at_50": 1.0,
+            "precision_at_50": 0.02,
+            "ndcg_at_50": 1.0,
+            "recall_at_100": 1.0,
+            "precision_at_100": 0.01,
+            "ndcg_at_100": 1.0,
+            "mrr": 1.0
+          },
+          "citation_valid": true,
+          "duration_ms": 1.6789166256785393,
+          "config_hash": "b0743d7c209167e7a73298b104cf532e2aa20b75ee033cce807f6fc4856b0a41"
+        },
+        {
+          "case_id": "quantization-2",
+          "ranked_evidence_ids": [
+            "5625010314b2fe31647f1980a4775077ce717d6761043bc8086179643eb15bbe",
+            "ae7f65895958d3d4aeeb816426ab5270319ad86cfaee114215fb73b3c9b1e752"
+          ],
+          "expected_evidence_ids": [
+            "5625010314b2fe31647f1980a4775077ce717d6761043bc8086179643eb15bbe"
+          ],
+          "metrics": {
+            "recall_at_5": 1.0,
+            "precision_at_5": 0.2,
+            "ndcg_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "precision_at_10": 0.1,
+            "ndcg_at_10": 1.0,
+            "recall_at_20": 1.0,
+            "precision_at_20": 0.05,
+            "ndcg_at_20": 1.0,
+            "recall_at_50": 1.0,
+            "precision_at_50": 0.02,
+            "ndcg_at_50": 1.0,
+            "recall_at_100": 1.0,
+            "precision_at_100": 0.01,
+            "ndcg_at_100": 1.0,
+            "mrr": 1.0
+          },
+          "citation_valid": true,
+          "duration_ms": 1.3611670583486557,
+          "config_hash": "b0743d7c209167e7a73298b104cf532e2aa20b75ee033cce807f6fc4856b0a41"
+        },
+        {
+          "case_id": "memory-1",
+          "ranked_evidence_ids": [
+            "f3c0761cd0aefa0ae1abfe5d151994ca5a502000a3e767917b781dd9bd42abd5"
+          ],
+          "expected_evidence_ids": [
+            "f3c0761cd0aefa0ae1abfe5d151994ca5a502000a3e767917b781dd9bd42abd5"
+          ],
+          "metrics": {
+            "recall_at_5": 1.0,
+            "precision_at_5": 0.2,
+            "ndcg_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "precision_at_10": 0.1,
+            "ndcg_at_10": 1.0,
+            "recall_at_20": 1.0,
+            "precision_at_20": 0.05,
+            "ndcg_at_20": 1.0,
+            "recall_at_50": 1.0,
+            "precision_at_50": 0.02,
+            "ndcg_at_50": 1.0,
+            "recall_at_100": 1.0,
+            "precision_at_100": 0.01,
+            "ndcg_at_100": 1.0,
+            "mrr": 1.0
+          },
+          "citation_valid": true,
+          "duration_ms": 1.5592081472277641,
+          "config_hash": "b0743d7c209167e7a73298b104cf532e2aa20b75ee033cce807f6fc4856b0a41"
+        },
+        {
+          "case_id": "memory-2",
+          "ranked_evidence_ids": [
+            "f3c0761cd0aefa0ae1abfe5d151994ca5a502000a3e767917b781dd9bd42abd5",
+            "741dae30abc2440c7f17efef5f8a4753076fcc32ab9c4134a5d36e7b3d117f6f",
+            "7ab406a4df309b6f7474a720cbcb2375431ce49c05f66d06191c5851c7609004"
+          ],
+          "expected_evidence_ids": [
+            "f3c0761cd0aefa0ae1abfe5d151994ca5a502000a3e767917b781dd9bd42abd5"
+          ],
+          "metrics": {
+            "recall_at_5": 1.0,
+            "precision_at_5": 0.2,
+            "ndcg_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "precision_at_10": 0.1,
+            "ndcg_at_10": 1.0,
+            "recall_at_20": 1.0,
+            "precision_at_20": 0.05,
+            "ndcg_at_20": 1.0,
+            "recall_at_50": 1.0,
+            "precision_at_50": 0.02,
+            "ndcg_at_50": 1.0,
+            "recall_at_100": 1.0,
+            "precision_at_100": 0.01,
+            "ndcg_at_100": 1.0,
+            "mrr": 1.0
+          },
+          "citation_valid": true,
+          "duration_ms": 1.5010419301688671,
+          "config_hash": "b0743d7c209167e7a73298b104cf532e2aa20b75ee033cce807f6fc4856b0a41"
+        },
+        {
+          "case_id": "robot-1",
+          "ranked_evidence_ids": [
+            "7f21bf0d20b5104e87164861aafb54701e4d6bb4dfa68fb4069515b6dc991ed6"
+          ],
+          "expected_evidence_ids": [
+            "7f21bf0d20b5104e87164861aafb54701e4d6bb4dfa68fb4069515b6dc991ed6"
+          ],
+          "metrics": {
+            "recall_at_5": 1.0,
+            "precision_at_5": 0.2,
+            "ndcg_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "precision_at_10": 0.1,
+            "ndcg_at_10": 1.0,
+            "recall_at_20": 1.0,
+            "precision_at_20": 0.05,
+            "ndcg_at_20": 1.0,
+            "recall_at_50": 1.0,
+            "precision_at_50": 0.02,
+            "ndcg_at_50": 1.0,
+            "recall_at_100": 1.0,
+            "precision_at_100": 0.01,
+            "ndcg_at_100": 1.0,
+            "mrr": 1.0
+          },
+          "citation_valid": true,
+          "duration_ms": 1.6220840625464916,
+          "config_hash": "b0743d7c209167e7a73298b104cf532e2aa20b75ee033cce807f6fc4856b0a41"
+        },
+        {
+          "case_id": "robot-2",
+          "ranked_evidence_ids": [
+            "7f21bf0d20b5104e87164861aafb54701e4d6bb4dfa68fb4069515b6dc991ed6"
+          ],
+          "expected_evidence_ids": [
+            "7f21bf0d20b5104e87164861aafb54701e4d6bb4dfa68fb4069515b6dc991ed6"
+          ],
+          "metrics": {
+            "recall_at_5": 1.0,
+            "precision_at_5": 0.2,
+            "ndcg_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "precision_at_10": 0.1,
+            "ndcg_at_10": 1.0,
+            "recall_at_20": 1.0,
+            "precision_at_20": 0.05,
+            "ndcg_at_20": 1.0,
+            "recall_at_50": 1.0,
+            "precision_at_50": 0.02,
+            "ndcg_at_50": 1.0,
+            "recall_at_100": 1.0,
+            "precision_at_100": 0.01,
+            "ndcg_at_100": 1.0,
+            "mrr": 1.0
+          },
+          "citation_valid": true,
+          "duration_ms": 1.2405002489686012,
+          "config_hash": "b0743d7c209167e7a73298b104cf532e2aa20b75ee033cce807f6fc4856b0a41"
+        },
+        {
+          "case_id": "timeseries-1",
+          "ranked_evidence_ids": [
+            "5049cd2b06284154cd7a1fbaa642561fb437f1b3126cd91ffe62a4bb806b80e9"
+          ],
+          "expected_evidence_ids": [
+            "5049cd2b06284154cd7a1fbaa642561fb437f1b3126cd91ffe62a4bb806b80e9"
+          ],
+          "metrics": {
+            "recall_at_5": 1.0,
+            "precision_at_5": 0.2,
+            "ndcg_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "precision_at_10": 0.1,
+            "ndcg_at_10": 1.0,
+            "recall_at_20": 1.0,
+            "precision_at_20": 0.05,
+            "ndcg_at_20": 1.0,
+            "recall_at_50": 1.0,
+            "precision_at_50": 0.02,
+            "ndcg_at_50": 1.0,
+            "recall_at_100": 1.0,
+            "precision_at_100": 0.01,
+            "ndcg_at_100": 1.0,
+            "mrr": 1.0
+          },
+          "citation_valid": true,
+          "duration_ms": 1.4967918395996094,
+          "config_hash": "b0743d7c209167e7a73298b104cf532e2aa20b75ee033cce807f6fc4856b0a41"
+        },
+        {
+          "case_id": "timeseries-2",
+          "ranked_evidence_ids": [
+            "5049cd2b06284154cd7a1fbaa642561fb437f1b3126cd91ffe62a4bb806b80e9"
+          ],
+          "expected_evidence_ids": [
+            "5049cd2b06284154cd7a1fbaa642561fb437f1b3126cd91ffe62a4bb806b80e9"
+          ],
+          "metrics": {
+            "recall_at_5": 1.0,
+            "precision_at_5": 0.2,
+            "ndcg_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "precision_at_10": 0.1,
+            "ndcg_at_10": 1.0,
+            "recall_at_20": 1.0,
+            "precision_at_20": 0.05,
+            "ndcg_at_20": 1.0,
+            "recall_at_50": 1.0,
+            "precision_at_50": 0.02,
+            "ndcg_at_50": 1.0,
+            "recall_at_100": 1.0,
+            "precision_at_100": 0.01,
+            "ndcg_at_100": 1.0,
+            "mrr": 1.0
+          },
+          "citation_valid": true,
+          "duration_ms": 1.3871658593416214,
+          "config_hash": "b0743d7c209167e7a73298b104cf532e2aa20b75ee033cce807f6fc4856b0a41"
+        },
+        {
+          "case_id": "speech-1",
+          "ranked_evidence_ids": [
+            "fb700b267e87719389644172ec42ea685e5f860695d7aed39697c7076ff2e3ee",
+            "842f04aac19877f1895ae7daffaa6cde7dc0705763db8ccbbceab726b6f4dcaa"
+          ],
+          "expected_evidence_ids": [
+            "fb700b267e87719389644172ec42ea685e5f860695d7aed39697c7076ff2e3ee"
+          ],
+          "metrics": {
+            "recall_at_5": 1.0,
+            "precision_at_5": 0.2,
+            "ndcg_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "precision_at_10": 0.1,
+            "ndcg_at_10": 1.0,
+            "recall_at_20": 1.0,
+            "precision_at_20": 0.05,
+            "ndcg_at_20": 1.0,
+            "recall_at_50": 1.0,
+            "precision_at_50": 0.02,
+            "ndcg_at_50": 1.0,
+            "recall_at_100": 1.0,
+            "precision_at_100": 0.01,
+            "ndcg_at_100": 1.0,
+            "mrr": 1.0
+          },
+          "citation_valid": true,
+          "duration_ms": 1.8022079020738602,
+          "config_hash": "b0743d7c209167e7a73298b104cf532e2aa20b75ee033cce807f6fc4856b0a41"
+        },
+        {
+          "case_id": "speech-2",
+          "ranked_evidence_ids": [
+            "fb700b267e87719389644172ec42ea685e5f860695d7aed39697c7076ff2e3ee",
+            "7f21bf0d20b5104e87164861aafb54701e4d6bb4dfa68fb4069515b6dc991ed6"
+          ],
+          "expected_evidence_ids": [
+            "fb700b267e87719389644172ec42ea685e5f860695d7aed39697c7076ff2e3ee"
+          ],
+          "metrics": {
+            "recall_at_5": 1.0,
+            "precision_at_5": 0.2,
+            "ndcg_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "precision_at_10": 0.1,
+            "ndcg_at_10": 1.0,
+            "recall_at_20": 1.0,
+            "precision_at_20": 0.05,
+            "ndcg_at_20": 1.0,
+            "recall_at_50": 1.0,
+            "precision_at_50": 0.02,
+            "ndcg_at_50": 1.0,
+            "recall_at_100": 1.0,
+            "precision_at_100": 0.01,
+            "ndcg_at_100": 1.0,
+            "mrr": 1.0
+          },
+          "citation_valid": true,
+          "duration_ms": 1.403291244059801,
+          "config_hash": "b0743d7c209167e7a73298b104cf532e2aa20b75ee033cce807f6fc4856b0a41"
+        },
+        {
+          "case_id": "ranking-1",
+          "ranked_evidence_ids": [
+            "c54888731a7c78d9942bf6f308a50a9c465825e2b6c763e407955635ba12e68d"
+          ],
+          "expected_evidence_ids": [
+            "c54888731a7c78d9942bf6f308a50a9c465825e2b6c763e407955635ba12e68d"
+          ],
+          "metrics": {
+            "recall_at_5": 1.0,
+            "precision_at_5": 0.2,
+            "ndcg_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "precision_at_10": 0.1,
+            "ndcg_at_10": 1.0,
+            "recall_at_20": 1.0,
+            "precision_at_20": 0.05,
+            "ndcg_at_20": 1.0,
+            "recall_at_50": 1.0,
+            "precision_at_50": 0.02,
+            "ndcg_at_50": 1.0,
+            "recall_at_100": 1.0,
+            "precision_at_100": 0.01,
+            "ndcg_at_100": 1.0,
+            "mrr": 1.0
+          },
+          "citation_valid": true,
+          "duration_ms": 1.554667018353939,
+          "config_hash": "b0743d7c209167e7a73298b104cf532e2aa20b75ee033cce807f6fc4856b0a41"
+        },
+        {
+          "case_id": "ranking-2",
+          "ranked_evidence_ids": [
+            "c54888731a7c78d9942bf6f308a50a9c465825e2b6c763e407955635ba12e68d"
+          ],
+          "expected_evidence_ids": [
+            "c54888731a7c78d9942bf6f308a50a9c465825e2b6c763e407955635ba12e68d"
+          ],
+          "metrics": {
+            "recall_at_5": 1.0,
+            "precision_at_5": 0.2,
+            "ndcg_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "precision_at_10": 0.1,
+            "ndcg_at_10": 1.0,
+            "recall_at_20": 1.0,
+            "precision_at_20": 0.05,
+            "ndcg_at_20": 1.0,
+            "recall_at_50": 1.0,
+            "precision_at_50": 0.02,
+            "ndcg_at_50": 1.0,
+            "recall_at_100": 1.0,
+            "precision_at_100": 0.01,
+            "ndcg_at_100": 1.0,
+            "mrr": 1.0
+          },
+          "citation_valid": true,
+          "duration_ms": 1.1809170246124268,
+          "config_hash": "b0743d7c209167e7a73298b104cf532e2aa20b75ee033cce807f6fc4856b0a41"
+        },
+        {
+          "case_id": "diffusion-1",
+          "ranked_evidence_ids": [
+            "a72b4dff973b38c66f6a77766ca87f21d208b464d6e71244efe804db8d05098a"
+          ],
+          "expected_evidence_ids": [
+            "a72b4dff973b38c66f6a77766ca87f21d208b464d6e71244efe804db8d05098a"
+          ],
+          "metrics": {
+            "recall_at_5": 1.0,
+            "precision_at_5": 0.2,
+            "ndcg_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "precision_at_10": 0.1,
+            "ndcg_at_10": 1.0,
+            "recall_at_20": 1.0,
+            "precision_at_20": 0.05,
+            "ndcg_at_20": 1.0,
+            "recall_at_50": 1.0,
+            "precision_at_50": 0.02,
+            "ndcg_at_50": 1.0,
+            "recall_at_100": 1.0,
+            "precision_at_100": 0.01,
+            "ndcg_at_100": 1.0,
+            "mrr": 1.0
+          },
+          "citation_valid": true,
+          "duration_ms": 1.4458750374615192,
+          "config_hash": "b0743d7c209167e7a73298b104cf532e2aa20b75ee033cce807f6fc4856b0a41"
+        },
+        {
+          "case_id": "diffusion-2",
+          "ranked_evidence_ids": [
+            "a72b4dff973b38c66f6a77766ca87f21d208b464d6e71244efe804db8d05098a",
+            "e7ad0f47453950bfa130db2f53ec9fcfcb394df703b42c65e75ce8fb2f38d46f"
+          ],
+          "expected_evidence_ids": [
+            "a72b4dff973b38c66f6a77766ca87f21d208b464d6e71244efe804db8d05098a"
+          ],
+          "metrics": {
+            "recall_at_5": 1.0,
+            "precision_at_5": 0.2,
+            "ndcg_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "precision_at_10": 0.1,
+            "ndcg_at_10": 1.0,
+            "recall_at_20": 1.0,
+            "precision_at_20": 0.05,
+            "ndcg_at_20": 1.0,
+            "recall_at_50": 1.0,
+            "precision_at_50": 0.02,
+            "ndcg_at_50": 1.0,
+            "recall_at_100": 1.0,
+            "precision_at_100": 0.01,
+            "ndcg_at_100": 1.0,
+            "mrr": 1.0
+          },
+          "citation_valid": true,
+          "duration_ms": 1.330208033323288,
+          "config_hash": "b0743d7c209167e7a73298b104cf532e2aa20b75ee033cce807f6fc4856b0a41"
+        },
+        {
+          "case_id": "compiler-1",
+          "ranked_evidence_ids": [
+            "81a62e11ea8e2a4ada413e56923550cb0ce1ad332ccbbe6574d7746d1df478af"
+          ],
+          "expected_evidence_ids": [
+            "81a62e11ea8e2a4ada413e56923550cb0ce1ad332ccbbe6574d7746d1df478af"
+          ],
+          "metrics": {
+            "recall_at_5": 1.0,
+            "precision_at_5": 0.2,
+            "ndcg_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "precision_at_10": 0.1,
+            "ndcg_at_10": 1.0,
+            "recall_at_20": 1.0,
+            "precision_at_20": 0.05,
+            "ndcg_at_20": 1.0,
+            "recall_at_50": 1.0,
+            "precision_at_50": 0.02,
+            "ndcg_at_50": 1.0,
+            "recall_at_100": 1.0,
+            "precision_at_100": 0.01,
+            "ndcg_at_100": 1.0,
+            "mrr": 1.0
+          },
+          "citation_valid": true,
+          "duration_ms": 1.7004171386361122,
+          "config_hash": "b0743d7c209167e7a73298b104cf532e2aa20b75ee033cce807f6fc4856b0a41"
+        },
+        {
+          "case_id": "compiler-2",
+          "ranked_evidence_ids": [
+            "81a62e11ea8e2a4ada413e56923550cb0ce1ad332ccbbe6574d7746d1df478af"
+          ],
+          "expected_evidence_ids": [
+            "81a62e11ea8e2a4ada413e56923550cb0ce1ad332ccbbe6574d7746d1df478af"
+          ],
+          "metrics": {
+            "recall_at_5": 1.0,
+            "precision_at_5": 0.2,
+            "ndcg_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "precision_at_10": 0.1,
+            "ndcg_at_10": 1.0,
+            "recall_at_20": 1.0,
+            "precision_at_20": 0.05,
+            "ndcg_at_20": 1.0,
+            "recall_at_50": 1.0,
+            "precision_at_50": 0.02,
+            "ndcg_at_50": 1.0,
+            "recall_at_100": 1.0,
+            "precision_at_100": 0.01,
+            "ndcg_at_100": 1.0,
+            "mrr": 1.0
+          },
+          "citation_valid": true,
+          "duration_ms": 1.18312519043684,
+          "config_hash": "b0743d7c209167e7a73298b104cf532e2aa20b75ee033cce807f6fc4856b0a41"
+        },
+        {
+          "case_id": "storage-1",
+          "ranked_evidence_ids": [
+            "debc86d026a1ebdbd451c55fe5ec4bd52dbcbccc651d784646cd353de5b2ff54"
+          ],
+          "expected_evidence_ids": [
+            "debc86d026a1ebdbd451c55fe5ec4bd52dbcbccc651d784646cd353de5b2ff54"
+          ],
+          "metrics": {
+            "recall_at_5": 1.0,
+            "precision_at_5": 0.2,
+            "ndcg_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "precision_at_10": 0.1,
+            "ndcg_at_10": 1.0,
+            "recall_at_20": 1.0,
+            "precision_at_20": 0.05,
+            "ndcg_at_20": 1.0,
+            "recall_at_50": 1.0,
+            "precision_at_50": 0.02,
+            "ndcg_at_50": 1.0,
+            "recall_at_100": 1.0,
+            "precision_at_100": 0.01,
+            "ndcg_at_100": 1.0,
+            "mrr": 1.0
+          },
+          "citation_valid": true,
+          "duration_ms": 1.4761658385396004,
+          "config_hash": "b0743d7c209167e7a73298b104cf532e2aa20b75ee033cce807f6fc4856b0a41"
+        },
+        {
+          "case_id": "storage-2",
+          "ranked_evidence_ids": [
+            "debc86d026a1ebdbd451c55fe5ec4bd52dbcbccc651d784646cd353de5b2ff54",
+            "cf251cf14c6090e267e4fce9e316062411290ed711c2bf17b7ca813a9d7c73dc"
+          ],
+          "expected_evidence_ids": [
+            "debc86d026a1ebdbd451c55fe5ec4bd52dbcbccc651d784646cd353de5b2ff54"
+          ],
+          "metrics": {
+            "recall_at_5": 1.0,
+            "precision_at_5": 0.2,
+            "ndcg_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "precision_at_10": 0.1,
+            "ndcg_at_10": 1.0,
+            "recall_at_20": 1.0,
+            "precision_at_20": 0.05,
+            "ndcg_at_20": 1.0,
+            "recall_at_50": 1.0,
+            "precision_at_50": 0.02,
+            "ndcg_at_50": 1.0,
+            "recall_at_100": 1.0,
+            "precision_at_100": 0.01,
+            "ndcg_at_100": 1.0,
+            "mrr": 1.0
+          },
+          "citation_valid": true,
+          "duration_ms": 1.7176251858472824,
+          "config_hash": "b0743d7c209167e7a73298b104cf532e2aa20b75ee033cce807f6fc4856b0a41"
+        },
+        {
+          "case_id": "interview-1",
+          "ranked_evidence_ids": [
+            "d5c85cec93962fcc21aa9adf7bbed2b9a39405a976e397fda637b807dcb3dcae"
+          ],
+          "expected_evidence_ids": [
+            "d5c85cec93962fcc21aa9adf7bbed2b9a39405a976e397fda637b807dcb3dcae"
+          ],
+          "metrics": {
+            "recall_at_5": 1.0,
+            "precision_at_5": 0.2,
+            "ndcg_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "precision_at_10": 0.1,
+            "ndcg_at_10": 1.0,
+            "recall_at_20": 1.0,
+            "precision_at_20": 0.05,
+            "ndcg_at_20": 1.0,
+            "recall_at_50": 1.0,
+            "precision_at_50": 0.02,
+            "ndcg_at_50": 1.0,
+            "recall_at_100": 1.0,
+            "precision_at_100": 0.01,
+            "ndcg_at_100": 1.0,
+            "mrr": 1.0
+          },
+          "citation_valid": true,
+          "duration_ms": 1.5655001625418663,
+          "config_hash": "b0743d7c209167e7a73298b104cf532e2aa20b75ee033cce807f6fc4856b0a41"
+        },
+        {
+          "case_id": "interview-2",
+          "ranked_evidence_ids": [
+            "d5c85cec93962fcc21aa9adf7bbed2b9a39405a976e397fda637b807dcb3dcae"
+          ],
+          "expected_evidence_ids": [
+            "d5c85cec93962fcc21aa9adf7bbed2b9a39405a976e397fda637b807dcb3dcae"
+          ],
+          "metrics": {
+            "recall_at_5": 1.0,
+            "precision_at_5": 0.2,
+            "ndcg_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "precision_at_10": 0.1,
+            "ndcg_at_10": 1.0,
+            "recall_at_20": 1.0,
+            "precision_at_20": 0.05,
+            "ndcg_at_20": 1.0,
+            "recall_at_50": 1.0,
+            "precision_at_50": 0.02,
+            "ndcg_at_50": 1.0,
+            "recall_at_100": 1.0,
+            "precision_at_100": 0.01,
+            "ndcg_at_100": 1.0,
+            "mrr": 1.0
+          },
+          "citation_valid": true,
+          "duration_ms": 1.2076660059392452,
+          "config_hash": "b0743d7c209167e7a73298b104cf532e2aa20b75ee033cce807f6fc4856b0a41"
+        }
+      ],
+      "metrics": {
+        "recall_at_5": 1.0,
+        "precision_at_5": 0.2,
+        "ndcg_at_5": 0.9846220730654774,
+        "recall_at_10": 1.0,
+        "precision_at_10": 0.1,
+        "ndcg_at_10": 0.9846220730654774,
+        "recall_at_20": 1.0,
+        "precision_at_20": 0.05,
+        "ndcg_at_20": 0.9846220730654774,
+        "recall_at_50": 1.0,
+        "precision_at_50": 0.02,
+        "ndcg_at_50": 0.9846220730654774,
+        "recall_at_100": 1.0,
+        "precision_at_100": 0.01,
+        "ndcg_at_100": 0.9846220730654774,
+        "mrr": 0.9791666666666666
+      },
+      "p50_ms": 1.4967918395996094,
+      "p95_ms": 2.0084157586097717
+    }
+  ],
+  "config": {
+    "version": "knowledge-v1",
+    "parser_version": "canonical-v1",
+    "pdf_layout_revision": "8f39ad3c0b4c58e9c2d2c84a38465abf757272d8",
+    "max_bytes": 5242880,
+    "max_pages": 100,
+    "max_nodes": 5000,
+    "parse_timeout_seconds": 60,
+    "max_parse_rss_mb": 1536,
+    "max_unit_bytes": 800,
+    "token_counter": "utf8-byte-upper-bound-v1"
+  },
+  "encoder_identity": "none",
+  "reranker_identity": "none",
+  "code_hash": "daa03f490c490afbb5fe9d63487716279b1d61ce94683ea4d8ae23f37a48633a",
+  "dependency_lock_hash": "4a3a3ee5b2401996edf8e17fe064a8a725ee04ff8076e33ebe8160957734373c",
+  "environment": {
+    "python": "3.12.13",
+    "system": "Darwin",
+    "peak_rss_bytes": 104808448
+  },
+  "gate": {
+    "engineering_checks_passed": true,
+    "human_reviewed_cases": 0,
+    "reviewed_dataset_ready": false,
+    "production_release_ready": false
+  },
+  "limits": [
+    "Synthetic Markdown/TXT corpus; not reviewed real resumes or Parsing Gold.",
+    "PDF/DOCX require separate adapter integration checks.",
+    "No production performance or answer-faithfulness claim."
+  ]
+}

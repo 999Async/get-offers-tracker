@@ -1,0 +1,17 @@
+{
+  "server": {
+    "title": "qdrant - vector search engine",
+    "version": "1.19.1",
+    "commit": "6ab21cac18ebb6f4ae29102c7f8f5cc11affd5de"
+  },
+  "mode": "local Docker HTTP service",
+  "tests_passed": 24,
+  "test_files": [
+    "test_job_search.py",
+    "test_job_evaluation.py"
+  ],
+  "image": "docker.m.daocloud.io/qdrant/qdrant:v1.19.1",
+  "image_digest": "sha256:12364fe851b9f17356fc88189fc06d1b521262e04659ec7345975b00c9246a10",
+  "binding": "127.0.0.1:6336",
+  "source": "mirror of upstream image; Docker Hub direct pull timed out"
+}

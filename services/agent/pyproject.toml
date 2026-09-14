@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "getoffers-agent"
+version = "0.1.0"
+description = "Local, event-sourced Career Agent runtime and evaluation harness"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.12,<3",
+    "qdrant-client>=1.15,<2",
+    "markdown-it-py>=4,<5",
+]
+
+[project.scripts]
+getoffers-agent = "getoffers_agent.cli:main"
+getoffers-search = "getoffers_agent.job_search.cli:main"
+getoffers-knowledge = "getoffers_agent.knowledge.cli:main"
+
+[project.optional-dependencies]
+neural = [
+    "sentence-transformers>=5,<6",
+]
+documents = ["docling>=2,<3"]
+r2 = ["boto3>=1.40,<2"]
+
+[dependency-groups]
+dev = ["pytest>=8.4,<10", "ruff>=0.12,<1"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "ASYNC"]

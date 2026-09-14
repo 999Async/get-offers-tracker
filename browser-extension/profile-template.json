@@ -1,0 +1,126 @@
+{
+  "personal": {
+    "name": "",
+    "email": "",
+    "phone": { "number": "" },
+    "gender": "",
+    "birthDate": "",
+    "age": "",
+    "heightCm": "",
+    "weightKg": "",
+    "nativePlace": "",
+    "ethnicity": "",
+    "politicalStatus": "",
+    "maritalStatus": "",
+    "householdType": "",
+    "householdRegistration": "",
+    "currentResidence": "",
+    "documentIssuingCountryOrRegion": "",
+    "identityDocument": { "type": "", "number": "" },
+    "emergencyContact": { "name": "", "phone": "" },
+    "achievements": "",
+    "additionalInfo": "",
+    "hobbies": "",
+    "selfEvaluation": ""
+  },
+  "jobPreferences": {
+    "firstChoiceLocation": "",
+    "secondChoiceLocation": "",
+    "firstChoiceRole": "",
+    "secondChoiceRole": "",
+    "acceptableLocations": [],
+    "applicationSource": "",
+    "acceptLocationChange": null,
+    "acceptRoleReassignment": null,
+    "preferredInterviewSite": "",
+    "acceptRelocation": null,
+    "acceptUnderdevelopedOverseasAssignment": null,
+    "referralCode": ""
+  },
+  "educationSummary": {
+    "highestDiscipline": "",
+    "undergraduateDiscipline": "",
+    "graduationSchool": "",
+    "graduationMajor": "",
+    "majorRank": "",
+    "graduateStatus": "",
+    "englishLevel": "",
+    "englishScore": "",
+    "otherLanguage": "",
+    "otherLanguageLevel": "",
+    "computerLevel": "",
+    "scholarshipLevel": "",
+    "outstandingGraduateLevel": "",
+    "practiceCount": "",
+    "studentLeaderLevel": "",
+    "studentLeaderTitle": "",
+    "competitionAwardLevel": ""
+  },
+  "education": [
+    {
+      "school": "",
+      "degree": "",
+      "major": "",
+      "department": "",
+      "startDate": "",
+      "graduationDate": "",
+      "educationType": "",
+      "disciplineCategory": "",
+      "gradeRank": "",
+      "gpa": "",
+      "gpaScale": "",
+      "advisorName": "",
+      "laboratory": "",
+      "researchDirection": "",
+      "nationalKeyLaboratory": null,
+      "studentLeader": null,
+      "isUnifiedEnrollment": null,
+      "overseasStudy": null,
+      "location": { "country": "", "province": "", "city": "" }
+    }
+  ],
+  "workExperience": [
+    {
+      "company": "",
+      "position": "",
+      "department": "",
+      "location": "",
+      "startDate": "",
+      "endDate": "",
+      "description": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "",
+      "role": "",
+      "link": "",
+      "location": "",
+      "startDate": "",
+      "endDate": "",
+      "description": ""
+    }
+  ],
+  "languages": [
+    { "language": "", "proficiency": "", "certificate": "", "score": "", "notes": "" }
+  ],
+  "skills": {
+    "programmingLanguages": [],
+    "programmingProficiency": ""
+  },
+  "publications": [
+    { "title": "", "publicationDate": "", "journal": "", "description": "" }
+  ],
+  "competitions": [
+    { "name": "", "awardDate": "", "level": "", "awardLevel": "" }
+  ],
+  "scholarships": [
+    { "name": "", "type": "", "level": "", "awardLevel": "", "awardDate": "", "description": "" }
+  ],
+  "patents": [
+    { "number": "", "name": "", "publicationDate": "", "description": "" }
+  ],
+  "researchOutputs": [
+    { "name": "", "date": "", "level": "", "description": "" }
+  ]
+}

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GetOffers 招聘表单助手</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <div class="popup-heading">
+        <div>
+          <div class="eyebrow">GetOffers</div>
+          <h1>招聘表单助手</h1>
+        </div>
+        <a class="guide-link" href="guide.html" target="_blank">使用说明</a>
+      </div>
+      <p class="lede">先预览，再填写绿色字段。黄色字段、协议与最终提交始终由你确认。</p>
+
+      <section class="setup-card" aria-labelledby="profile-title">
+        <div class="section-heading">
+          <strong id="profile-title">1. 准备简历资料</strong>
+        </div>
+        <p class="setup-help">已有 PDF/Word 简历？下载模板后，把两份文件交给可信的 AI 即可生成。</p>
+        <div class="profile-tools">
+          <a class="tool-link" href="profile-template.json" download="profile-template.json">下载空白模板</a>
+          <button id="copy-profile-prompt" class="tool-link" type="button">复制 AI 生成提示词</button>
+        </div>
+        <label class="file-label">
+          <span>选择生成并检查过的 profile.json</span>
+          <input id="profile-file" type="file" accept="application/json,.json" />
+        </label>
+        <div class="state-row">
+          <p id="profile-state" class="muted" role="status">尚未导入资料</p>
+          <button id="clear-profile" class="quiet" type="button" hidden>清除</button>
+        </div>
+      </section>
+
+      <div class="actions" aria-label="填写步骤">
+        <button id="scan" type="button" disabled>2. 扫描并预览</button>
+        <button id="fill" class="primary" type="button" disabled>3. 填写绿色字段</button>
+      </div>
+      <button id="copy-diagnostics" class="diagnostics" type="button" disabled>复制脱敏诊断</button>
+
+      <section id="summary" class="summary" hidden aria-live="polite"></section>
+      <section id="results" class="results" aria-label="扫描结果"></section>
+      <p class="footer-note">资料只保存在当前浏览器；扩展不会自动提交表单。</p>
+    </main>
+    <script src="bridge.js"></script>
+    <script src="profile-utils.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

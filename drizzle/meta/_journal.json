@@ -1,5 +1,55 @@
 {
   "version": "7",
   "dialect": "sqlite",
-  "entries": []
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1786263050348,
+      "tag": "0000_oval_bishop",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1788657340297,
+      "tag": "0001_white_cannonball",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1788671373659,
+      "tag": "0002_smiling_chamber",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1788674105428,
+      "tag": "0003_talented_toxin",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1788675857609,
+      "tag": "0004_bizarre_quicksilver",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1789200601816,
+      "tag": "0005_freezing_quentin_quire",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "6",
+      "when": 1789206463895,
+      "tag": "0006_silent_green_goblin",
+      "breakpoints": true
+    }
+  ]
 }

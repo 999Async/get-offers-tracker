@@ -1,0 +1,6 @@
+{
+  "config_id": "two-step-challenger",
+  "max_steps": 2,
+  "max_no_progress_steps": 2,
+  "model_version": "fake-model-v1"
+}

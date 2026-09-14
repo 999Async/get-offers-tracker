@@ -12,6 +12,7 @@ const eslintConfig = defineConfig([
     ".next/**",
     "dist/**",
     "out/**",
+    "**/.venv/**",
     "build/**",
     "next-env.d.ts",
   ]),
@@ -22,6 +23,13 @@ const eslintConfig = defineConfig([
   reactHooks.configs.flat["recommended-latest"],
   jsxA11y.flatConfigs.recommended,
   next.configs["core-web-vitals"],
+  {
+    files: ["app/developer/{panel,review}.tsx"],
+    rules: {
+      // Named scroll regions need a tab stop so keyboard users can pan wide tables.
+      "jsx-a11y/no-noninteractive-tabindex": ["error", { roles: ["region"] }],
+    },
+  },
   {
     languageOptions: {
       globals: {

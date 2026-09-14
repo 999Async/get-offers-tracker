@@ -1,4 +1,5 @@
 import vinext from "vinext";
+import { localCodex } from "./build/local-codex";
 import { defineConfig } from "vite";
 import hostingConfig from "./.openai/hosting.json";
 import { sites } from "./build/sites-vite-plugin";
@@ -13,6 +14,7 @@ const isCodexSeatbeltSandbox = process.env.CODEX_SANDBOX === "seatbelt";
 
 const localBindingConfig = {
   main: "./worker/index.ts",
+  triggers: { crons: ["*/5 * * * *"] },
   compatibility_flags: ["nodejs_compat"],
   d1_databases: d1
     ? [
@@ -44,10 +46,11 @@ export default defineConfig(async () => {
   const { cloudflare } = await import("@cloudflare/vite-plugin");
 
   return {
-    server: isCodexSeatbeltSandbox
+    server: process.env.GETOFFERS_LOCAL_CODEX === "1" ? { host: "localhost", strictPort: true, watch: { usePolling: true } } : isCodexSeatbeltSandbox
       ? { watch: { useFsEvents: false, usePolling: true } }
       : undefined,
     plugins: [
+      localCodex(),
       vinext(),
       sites(),
       cloudflare({

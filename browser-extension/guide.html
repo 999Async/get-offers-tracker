@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="GetOffers 招聘表单助手的零代码安装与使用指引" />
+    <title>GetOffers 招聘表单助手使用说明</title>
+    <link rel="stylesheet" href="guide.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="topbar" aria-label="页面导航">
+        <a class="brand" href="#top" aria-label="返回顶部">
+          <span class="brand-mark" aria-hidden="true">GO</span>
+          <span>GetOffers</span>
+        </a>
+        <a class="quiet-link" href="#faq">遇到问题</a>
+      </nav>
+      <div id="top" class="hero-content">
+        <p class="eyebrow">招聘表单助手</p>
+        <h1>不用重复填写简历，<br />四步开始使用</h1>
+        <p class="hero-copy">不需要安装开发工具。准备一份 PDF 或 Word 简历，跟着下面的图片操作即可。</p>
+        <div class="time-pill"><span aria-hidden="true">✓</span> 第一次安装约 3 分钟</div>
+      </div>
+    </header>
+
+    <main>
+      <section class="quick-start" aria-labelledby="quick-title">
+        <div class="section-heading">
+          <p class="eyebrow">先看这里</p>
+          <h2 id="quick-title">完整流程只有四步</h2>
+        </div>
+        <ol class="step-grid">
+          <li><span>01</span><strong>安装扩展</strong><p>下载项目并加载 browser-extension 文件夹。</p></li>
+          <li><span>02</span><strong>生成资料</strong><p>让可信 AI 从 PDF/Word 生成 profile.json。</p></li>
+          <li><span>03</span><strong>扫描预览</strong><p>在招聘页面先确认绿色、黄色和缺值项。</p></li>
+          <li><span>04</span><strong>填写复核</strong><p>只填写绿色字段，检查后由你手动提交。</p></li>
+        </ol>
+      </section>
+
+      <section id="install" class="guide-section">
+        <div class="section-number">01</div>
+        <div class="guide-copy">
+          <p class="eyebrow">安装扩展</p>
+          <h2>下载项目，选择正确文件夹</h2>
+          <ol class="instructions">
+            <li>在 GitHub 项目页面点击 <strong>Code → Download ZIP</strong>，下载后双击解压。</li>
+            <li>Chrome 地址栏输入 <strong>chrome://extensions</strong>；Edge 输入 <strong>edge://extensions</strong>。</li>
+            <li>打开右上角“开发者模式”，点击“加载已解压的扩展程序”。</li>
+            <li>选择解压后项目中的 <strong>browser-extension</strong> 文件夹。</li>
+          </ol>
+          <aside class="tip"><strong>不要选错：</strong>不能直接选择 ZIP，也不要选择整个 GetOffers 项目文件夹。</aside>
+        </div>
+        <figure>
+          <div class="install-shots">
+            <img src="docs/images/image.png" alt="Chrome 扩展程序页面中的开发者模式和加载已解压的扩展程序按钮" />
+            <img src="docs/images/image-1.png" alt="在文件选择窗口中选择 browser-extension 文件夹" />
+          </div>
+          <figcaption>不同浏览器版本的按钮位置可能略有差异，名称和顺序相同。</figcaption>
+        </figure>
+      </section>
+
+      <section id="profile" class="guide-section guide-section--reverse">
+        <div class="section-number">02</div>
+        <div class="guide-copy">
+          <p class="eyebrow">准备 profile.json</p>
+          <h2>把简历交给可信 AI 整理</h2>
+          <ol class="instructions">
+            <li>打开扩展，点击“下载空白模板”。</li>
+            <li>点击“复制 AI 生成提示词”。</li>
+            <li>向可信 AI 同时上传你的 PDF/Word 简历和 profile-template.json。</li>
+            <li>粘贴提示词，让 AI 返回可下载的 profile.json。</li>
+            <li>检查姓名、联系方式、日期和经历顺序，再导入扩展。</li>
+          </ol>
+          <aside class="warning"><strong>隐私提醒：</strong>简历可能包含电话、证件号和住址。只使用你信任的 AI；不愿上传时，可以手动填写空白模板。</aside>
+        </div>
+        <figure>
+          <img src="docs/images/03-generate-profile.png" alt="从 PDF 或 Word 简历生成 profile.json 的四步流程" />
+          <figcaption>缺失信息应保持空白或 null，不能让 AI 猜测。</figcaption>
+        </figure>
+      </section>
+
+      <section id="import" class="guide-section">
+        <div class="section-number">03</div>
+        <div class="guide-copy">
+          <p class="eyebrow">导入资料</p>
+          <h2>选择检查过的 profile.json</h2>
+          <ol class="instructions">
+            <li>打开真正的招聘申请表单，并先完成登录。</li>
+            <li>点击浏览器工具栏中的 GetOffers 招聘表单助手。</li>
+            <li>在“选择生成并检查过的 profile.json”下选择文件。</li>
+            <li>看到“已导入”后，点击“扫描并预览”。</li>
+          </ol>
+          <aside class="tip"><strong>导入失败？</strong>扩展会拦截空白模板和错误格式。重新让 AI 按原模板生成即可。</aside>
+        </div>
+        <figure>
+          <img src="docs/images/01-extension-home.png" alt="GetOffers 招聘表单助手的资料导入界面" />
+          <figcaption>导入过一次后，资料会保存在当前浏览器中；随时可以点击“清除”。</figcaption>
+        </figure>
+      </section>
+
+      <section id="scan" class="guide-section guide-section--reverse">
+        <div class="section-number">04</div>
+        <div class="guide-copy">
+          <p class="eyebrow">扫描与填写</p>
+          <h2>先看颜色，只填写绿色字段</h2>
+          <dl class="legend">
+            <div><dt class="badge badge--safe">绿色 · 可填</dt><dd>高置信度普通字段，可以自动填写。</dd></div>
+            <div><dt class="badge badge--review">黄色 · 人工</dt><dd>下拉框、日期、附件或有歧义的字段。</dd></div>
+            <div><dt class="badge badge--missing">灰色 · 缺值</dt><dd>资料中没有内容，或扩展暂时无法识别。</dd></div>
+          </dl>
+          <ol class="instructions">
+            <li>先点击“扫描并预览”，检查匹配结果。</li>
+            <li>确认后点击“填写绿色字段”。</li>
+            <li>逐项检查页面，手动完成黄色和缺值项。</li>
+            <li>由你本人确认协议、验证码、附件和最终提交。</li>
+          </ol>
+        </div>
+        <figure>
+          <img src="docs/images/04-scan-preview.png" alt="扫描结果中的绿色可填、黄色人工和灰色缺值字段" />
+          <figcaption>多页表单需要手动换页，每一页重新扫描和填写。</figcaption>
+        </figure>
+      </section>
+
+      <section class="safety" aria-labelledby="safety-title">
+        <div>
+          <p class="eyebrow">安全边界</p>
+          <h2 id="safety-title">最后一步永远由你决定</h2>
+        </div>
+        <div class="safety-grid">
+          <article><span class="yes" aria-hidden="true">✓</span><h3>扩展会做</h3><p>扫描当前页面、预览匹配结果、填写绿色普通字段，并把资料保存在本机浏览器。</p></article>
+          <article><span class="no" aria-hidden="true">×</span><h3>扩展不会做</h3><p>不会提交、保存、删除、发送验证码、勾选协议、上传附件或绕过 CAPTCHA。</p></article>
+        </div>
+      </section>
+
+      <section id="faq" class="faq" aria-labelledby="faq-title">
+        <p class="eyebrow">常见问题</p>
+        <h2 id="faq-title">卡住时先检查这四项</h2>
+        <details open><summary>按钮为什么是灰色的？</summary><p>先导入填写好的 profile.json。“填写绿色字段”要在完成一次扫描后才会启用。</p></details>
+        <details><summary>下拉框和日期为什么没有自动填写？</summary><p>很多招聘网站使用自定义组件，看似写入并不代表真正选中，因此扩展把它们保留为黄色人工项。</p></details>
+        <details><summary>多段经历为什么顺序不对？</summary><p>先在网页上手动创建足够数量的经历卡片，再确认 profile.json 中的数组顺序与简历一致。</p></details>
+        <details><summary>更新代码后还是旧效果？</summary><p>进入扩展程序页面点击“重新加载”，然后刷新已经打开的招聘页面。</p></details>
+      </section>
+    </main>
+
+    <footer>
+      <strong>GetOffers 招聘表单助手</strong>
+      <p>安全策略始终优先于填充数量。</p>
+      <a href="#top">返回顶部 ↑</a>
+    </footer>
+  </body>
+</html>

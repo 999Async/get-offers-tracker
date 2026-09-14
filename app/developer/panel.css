@@ -1,0 +1,44 @@
+.developer-panel { grid-column: 1 / -1; min-width: 0; }
+.developer-panel h2 { margin: 0; }
+.developer-panel h3 { margin: 0 0 12px; font-size: 15px; font-weight: 600; }
+.developer-panel p { font-size: 13px; line-height: 1.7; }
+.developer-toggle { margin-top: 16px; }
+.developer-note { color: var(--body); overflow-wrap: anywhere; }
+.developer-inspector { margin-top: 24px; border-top: 1px solid var(--hairline); padding-top: 20px; }
+.developer-toolbar, .developer-toolbar > div { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.developer-toolbar { justify-content: space-between; margin-bottom: 20px; }
+.developer-toolbar [aria-pressed="true"] { background: var(--ink); color: var(--canvas); border-color: var(--ink); }
+.developer-filter, .developer-compare label { display: flex; gap: 8px; align-items: center; font-size: 13px; color: var(--body); }
+.developer-panel select { max-width: 100%; min-height: 36px; border: 1px solid var(--hairline); border-radius: 6px; background: var(--canvas); padding: 6px 10px; color: var(--ink); }
+.developer-list { display: grid; margin-top: 16px; max-height: 340px; overflow-y: auto; scrollbar-color: var(--body) var(--soft); }
+.developer-row { display: flex; justify-content: space-between; gap: 20px; text-align: left; width: 100%; background: var(--canvas); border: 0; border-bottom: 1px solid var(--hairline); padding: 14px 10px; cursor: pointer; font-size: 13px; }
+.developer-row:hover, .developer-row[aria-pressed="true"] { background: var(--soft-2); }
+.developer-row > span:first-child { display: grid; gap: 6px; }
+.developer-row code, .developer-row small { color: var(--body); font-size: 12px; }
+.developer-panel code { overflow-wrap: anywhere; font-size: 11px; }
+.developer-detail { padding-top: 28px; margin-top: 24px; border-top: 1px solid var(--hairline); }
+.developer-table { overflow-x: auto; scrollbar-color: var(--body) var(--soft); }
+.developer-table table { width: 100%; border-collapse: collapse; font-size: 12px; text-align: left; font-variant-numeric: tabular-nums; }
+.developer-table caption { text-align: left; padding: 0 0 12px; color: var(--body); }
+.developer-table th, .developer-table td { padding: 10px; border-bottom: 1px solid var(--hairline); white-space: nowrap; }
+.developer-table thead th { background: var(--soft); font-weight: 500; }
+.developer-table small { display: block; }
+.developer-empty { padding: 24px 0; color: var(--body); font-size: 13px; }
+.developer-error { color: var(--red); }
+.developer-compare { display: flex; align-items: end; gap: 12px; flex-wrap: wrap; margin: 16px 0; }
+.developer-compare label { display: grid; gap: 6px; flex: 1; min-width: 160px; }
+.developer-identities { font-size: 12px; margin: 0 0 20px; }
+.developer-identities > div { display: flex; gap: 12px; margin: 6px 0; }
+.developer-identities dt { width: 44px; flex-shrink: 0; color: var(--body); }
+.developer-identities dd { margin: 0; min-width: 0; }
+@media (max-width: 600px) {
+  .developer-row { flex-direction: column; gap: 8px; }
+  .developer-compare { align-items: stretch; flex-direction: column; }
+  .developer-filter { align-items: start; flex-direction: column; }
+}
+
+.developer-table:focus-visible { outline: 1px solid var(--focus-outline); outline-offset: 2px; }
+
+.developer-review-cases { margin-top: 18px; font-size: 13px; }
+.developer-review-cases summary { cursor: pointer; padding: 8px 0; }
+.developer-review-cases[open] summary { margin-bottom: 12px; }

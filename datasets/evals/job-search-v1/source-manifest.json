@@ -1,0 +1,12 @@
+{
+  "source_url": "https://boards-api.greenhouse.io/v1/boards/figureai/jobs?content=true",
+  "captured_at": "2026-09-06T01:16:23.547476+00:00",
+  "artifact_sha256": "0362e806b5d416025e1212154cbe102e1b10bb31f95b1ad833c8eac3d6722535",
+  "source_jobs": 112,
+  "section_complete_jobs": 93,
+  "selected_jobs": 30,
+  "cases": 150,
+  "label_status": "machine-proposed, NOT human-reviewed",
+  "source_snapshot_local": ".agent-data/phase1/figureai-source.json",
+  "snapshot_file": "sources/figureai-0362e806b5d416025e1212154cbe102e1b10bb31f95b1ad833c8eac3d6722535.json"
+}

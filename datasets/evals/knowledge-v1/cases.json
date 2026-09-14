@@ -1,0 +1,290 @@
+{
+  "version": "knowledge-v1-synthetic-2026-09-06",
+  "review_status": "synthetic",
+  "documents": [
+    {
+      "id": "retrieval",
+      "format": "md",
+      "content": "# 检索评测\n\n设计 Python BM25 混合检索，并实现 Recall 指标计算。\n",
+      "expected_kinds": [
+        "heading",
+        "paragraph"
+      ],
+      "preserved_quotes": [
+        "设计 Python BM25 混合检索，并实现 Recall 指标计算。"
+      ]
+    },
+    {
+      "id": "vision",
+      "format": "txt",
+      "content": "使用 OpenCV 完成相机标定和图像去畸变。\n",
+      "expected_kinds": [
+        "paragraph"
+      ],
+      "preserved_quotes": [
+        "使用 OpenCV 完成相机标定和图像去畸变。"
+      ]
+    },
+    {
+      "id": "quantization",
+      "format": "md",
+      "content": "# 模型量化\n\n比较 INT8 量化前后模型精度与内存占用。\n",
+      "expected_kinds": [
+        "heading",
+        "paragraph"
+      ],
+      "preserved_quotes": [
+        "比较 INT8 量化前后模型精度与内存占用。"
+      ]
+    },
+    {
+      "id": "memory",
+      "format": "txt",
+      "content": "实现记忆版本更新、过期策略与多轮对话检索。\n",
+      "expected_kinds": [
+        "paragraph"
+      ],
+      "preserved_quotes": [
+        "实现记忆版本更新、过期策略与多轮对话检索。"
+      ]
+    },
+    {
+      "id": "robot",
+      "format": "md",
+      "content": "# 机器人控制\n\n实现机械臂轨迹规划和末端位置误差评估。\n",
+      "expected_kinds": [
+        "heading",
+        "paragraph"
+      ],
+      "preserved_quotes": [
+        "实现机械臂轨迹规划和末端位置误差评估。"
+      ]
+    },
+    {
+      "id": "timeseries",
+      "format": "txt",
+      "content": "训练 LSTM 预测设备传感器温度变化。\n",
+      "expected_kinds": [
+        "paragraph"
+      ],
+      "preserved_quotes": [
+        "训练 LSTM 预测设备传感器温度变化。"
+      ]
+    },
+    {
+      "id": "speech",
+      "format": "md",
+      "content": "# 语音识别\n\n评估 Whisper 在中文噪声语音上的字错误率。\n",
+      "expected_kinds": [
+        "heading",
+        "paragraph"
+      ],
+      "preserved_quotes": [
+        "评估 Whisper 在中文噪声语音上的字错误率。"
+      ]
+    },
+    {
+      "id": "ranking",
+      "format": "txt",
+      "content": "Built a pairwise ranking evaluation with NDCG and MRR metrics.\n",
+      "expected_kinds": [
+        "paragraph"
+      ],
+      "preserved_quotes": [
+        "Built a pairwise ranking evaluation with NDCG and MRR metrics."
+      ]
+    },
+    {
+      "id": "diffusion",
+      "format": "md",
+      "content": "# Image generation\n\nCompared diffusion samplers using image quality and inference latency.\n",
+      "expected_kinds": [
+        "heading",
+        "paragraph"
+      ],
+      "preserved_quotes": [
+        "Compared diffusion samplers using image quality and inference latency."
+      ]
+    },
+    {
+      "id": "compiler",
+      "format": "txt",
+      "content": "Implemented constant folding and dead code elimination passes.\n",
+      "expected_kinds": [
+        "paragraph"
+      ],
+      "preserved_quotes": [
+        "Implemented constant folding and dead code elimination passes."
+      ]
+    },
+    {
+      "id": "storage",
+      "format": "md",
+      "content": "# Storage project\n\nMeasured SQLite transaction durability and crash recovery.\n",
+      "expected_kinds": [
+        "heading",
+        "paragraph"
+      ],
+      "preserved_quotes": [
+        "Measured SQLite transaction durability and crash recovery."
+      ]
+    },
+    {
+      "id": "interview",
+      "format": "txt",
+      "content": "Q: How did you validate the retrieval system?\nA: We inspected citations and held-out retrieval failures.\n",
+      "expected_kinds": [
+        "qa_pair"
+      ],
+      "preserved_quotes": [
+        "Q: How did you validate the retrieval system?\nA: We inspected citations and held-out retrieval failures."
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "id": "retrieval-1",
+      "query": "Python BM25 检索评测",
+      "document": "retrieval",
+      "expected_quote": "设计 Python BM25 混合检索，并实现 Recall 指标计算。"
+    },
+    {
+      "id": "retrieval-2",
+      "query": "Recall 指标",
+      "document": "retrieval",
+      "expected_quote": "设计 Python BM25 混合检索，并实现 Recall 指标计算。"
+    },
+    {
+      "id": "vision-1",
+      "query": "OpenCV 相机标定",
+      "document": "vision",
+      "expected_quote": "使用 OpenCV 完成相机标定和图像去畸变。"
+    },
+    {
+      "id": "vision-2",
+      "query": "图像去畸变",
+      "document": "vision",
+      "expected_quote": "使用 OpenCV 完成相机标定和图像去畸变。"
+    },
+    {
+      "id": "quantization-1",
+      "query": "INT8 量化",
+      "document": "quantization",
+      "expected_quote": "比较 INT8 量化前后模型精度与内存占用。"
+    },
+    {
+      "id": "quantization-2",
+      "query": "模型内存占用",
+      "document": "quantization",
+      "expected_quote": "比较 INT8 量化前后模型精度与内存占用。"
+    },
+    {
+      "id": "memory-1",
+      "query": "记忆版本更新",
+      "document": "memory",
+      "expected_quote": "实现记忆版本更新、过期策略与多轮对话检索。"
+    },
+    {
+      "id": "memory-2",
+      "query": "多轮对话检索",
+      "document": "memory",
+      "expected_quote": "实现记忆版本更新、过期策略与多轮对话检索。"
+    },
+    {
+      "id": "robot-1",
+      "query": "机械臂轨迹规划",
+      "document": "robot",
+      "expected_quote": "实现机械臂轨迹规划和末端位置误差评估。"
+    },
+    {
+      "id": "robot-2",
+      "query": "末端位置误差",
+      "document": "robot",
+      "expected_quote": "实现机械臂轨迹规划和末端位置误差评估。"
+    },
+    {
+      "id": "timeseries-1",
+      "query": "LSTM 时序预测",
+      "document": "timeseries",
+      "expected_quote": "训练 LSTM 预测设备传感器温度变化。"
+    },
+    {
+      "id": "timeseries-2",
+      "query": "设备传感器温度",
+      "document": "timeseries",
+      "expected_quote": "训练 LSTM 预测设备传感器温度变化。"
+    },
+    {
+      "id": "speech-1",
+      "query": "Whisper 中文语音",
+      "document": "speech",
+      "expected_quote": "评估 Whisper 在中文噪声语音上的字错误率。"
+    },
+    {
+      "id": "speech-2",
+      "query": "字错误率评估",
+      "document": "speech",
+      "expected_quote": "评估 Whisper 在中文噪声语音上的字错误率。"
+    },
+    {
+      "id": "ranking-1",
+      "query": "pairwise ranking NDCG",
+      "document": "ranking",
+      "expected_quote": "Built a pairwise ranking evaluation with NDCG and MRR metrics."
+    },
+    {
+      "id": "ranking-2",
+      "query": "MRR evaluation",
+      "document": "ranking",
+      "expected_quote": "Built a pairwise ranking evaluation with NDCG and MRR metrics."
+    },
+    {
+      "id": "diffusion-1",
+      "query": "diffusion samplers",
+      "document": "diffusion",
+      "expected_quote": "Compared diffusion samplers using image quality and inference latency."
+    },
+    {
+      "id": "diffusion-2",
+      "query": "image generation inference latency",
+      "document": "diffusion",
+      "expected_quote": "Compared diffusion samplers using image quality and inference latency."
+    },
+    {
+      "id": "compiler-1",
+      "query": "constant folding compiler",
+      "document": "compiler",
+      "expected_quote": "Implemented constant folding and dead code elimination passes."
+    },
+    {
+      "id": "compiler-2",
+      "query": "dead code elimination",
+      "document": "compiler",
+      "expected_quote": "Implemented constant folding and dead code elimination passes."
+    },
+    {
+      "id": "storage-1",
+      "query": "SQLite transaction durability",
+      "document": "storage",
+      "expected_quote": "Measured SQLite transaction durability and crash recovery."
+    },
+    {
+      "id": "storage-2",
+      "query": "crash recovery storage",
+      "document": "storage",
+      "expected_quote": "Measured SQLite transaction durability and crash recovery."
+    },
+    {
+      "id": "interview-1",
+      "query": "validate retrieval citations",
+      "document": "interview",
+      "expected_quote": "Q: How did you validate the retrieval system?\nA: We inspected citations and held-out retrieval failures."
+    },
+    {
+      "id": "interview-2",
+      "query": "held-out retrieval failures",
+      "document": "interview",
+      "expected_quote": "Q: How did you validate the retrieval system?\nA: We inspected citations and held-out retrieval failures."
+    }
+  ]
+}

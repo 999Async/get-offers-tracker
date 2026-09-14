@@ -1,0 +1,245 @@
+{
+  "dataset_version": "career-synthetic-contracts-v1",
+  "provenance": "synthetic",
+  "controller": "career-discovery-lexical-v1",
+  "source_hash": "425627dbcbc133d805b219c9929509b99365e8ffd188ad21a0f8403164d67626",
+  "cases_hash": "9839ce8cb29e536e57f52fa8503638c9d0c2829529fd62eb01db7d822ee73bf3",
+  "cases": [
+    {
+      "case_id": "test_golden_path_exact_approval_replay_and_no_resume_content_in_events",
+      "duration_ms": 605.0,
+      "passed": true
+    },
+    {
+      "case_id": "test_reject_and_forged_approval_never_write",
+      "duration_ms": 491.0,
+      "passed": true
+    },
+    {
+      "case_id": "test_changed_resume_invalidates_approval_and_old_citations[delete]",
+      "duration_ms": 355.0,
+      "passed": true
+    },
+    {
+      "case_id": "test_changed_resume_invalidates_approval_and_old_citations[correct]",
+      "duration_ms": 304.0,
+      "passed": true
+    },
+    {
+      "case_id": "test_changed_resume_invalidates_approval_and_old_citations[new_version]",
+      "duration_ms": 461.0,
+      "passed": true
+    },
+    {
+      "case_id": "test_cross_tenant_and_arbitrary_job_selection_fail",
+      "duration_ms": 226.0,
+      "passed": true
+    },
+    {
+      "case_id": "test_lost_receipt_readback_and_cancel_pending",
+      "duration_ms": 885.0,
+      "passed": true
+    },
+    {
+      "case_id": "test_expired_approval_never_writes",
+      "duration_ms": 479.0,
+      "passed": true
+    },
+    {
+      "case_id": "test_missing_resume_and_read_capability_fail_closed",
+      "duration_ms": 87.0,
+      "passed": true
+    },
+    {
+      "case_id": "test_cancel_during_search_is_persisted_and_not_restarted",
+      "duration_ms": 150.0,
+      "passed": true
+    }
+  ],
+  "traces": [
+    {
+      "path": ".agent-data/phase3-eval-release/traces/0128d1bd-1a39-4668-bd11-4173a44a9145.json",
+      "hash": "6cc50ebdf4388cf3408c421d4d15e9b78975e3c7d632305ac7656192f7285fb1",
+      "config_hash": "a215cb6ab1b93f894f5d25a9d0b1ee00576fe766cd67585ed1cbba5fa5bc6ac6",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0,
+      "model": "none"
+    },
+    {
+      "path": ".agent-data/phase3-eval-release/traces/30a870be-da8a-4a2d-80d6-32bb8a327bb4.json",
+      "hash": "a6c2a2a6430e74ca953ef0057f7d878e03da878e53a4fe000a5e07afc6b26a80",
+      "config_hash": "a215cb6ab1b93f894f5d25a9d0b1ee00576fe766cd67585ed1cbba5fa5bc6ac6",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0,
+      "model": "none"
+    },
+    {
+      "path": ".agent-data/phase3-eval-release/traces/49ec43b3-896c-5d07-96b4-cdeb943dbd09.json",
+      "hash": "08e663b5dc3e4f0106786ec87bf0caf0392388ced40d8fd25784e828d114e88f",
+      "config_hash": "a215cb6ab1b93f894f5d25a9d0b1ee00576fe766cd67585ed1cbba5fa5bc6ac6",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0,
+      "model": "none"
+    },
+    {
+      "path": ".agent-data/phase3-eval-release/traces/52e7b651-4c22-5890-b95d-6beda6e3f01d.json",
+      "hash": "661e299b4e546aaf2a1c05a6663ba3515ff66ebf198699565e5dcab7a682a746",
+      "config_hash": "a215cb6ab1b93f894f5d25a9d0b1ee00576fe766cd67585ed1cbba5fa5bc6ac6",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0,
+      "model": "none"
+    },
+    {
+      "path": ".agent-data/phase3-eval-release/traces/59bb5043-cfd1-58cc-9cee-5084db5e38b4.json",
+      "hash": "6bd7179e9c139be2d7268dc8893b7475a583ae9605a4b2373274bc083fc093fb",
+      "config_hash": "a215cb6ab1b93f894f5d25a9d0b1ee00576fe766cd67585ed1cbba5fa5bc6ac6",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0,
+      "model": "none"
+    },
+    {
+      "path": ".agent-data/phase3-eval-release/traces/61ebedd3-030d-4d06-92a7-899d281bdbe0.json",
+      "hash": "481ed46015fd11e8d46727124c568b87fbab323c0dcb16f72baa971976196875",
+      "config_hash": "a215cb6ab1b93f894f5d25a9d0b1ee00576fe766cd67585ed1cbba5fa5bc6ac6",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0,
+      "model": "none"
+    },
+    {
+      "path": ".agent-data/phase3-eval-release/traces/70b8f4f2-995f-4aab-b44c-d8fad558e542.json",
+      "hash": "c1580cff23af629e2e707c7964c95e1d66b39891a0a8e279853fc5305af1fda3",
+      "config_hash": "a215cb6ab1b93f894f5d25a9d0b1ee00576fe766cd67585ed1cbba5fa5bc6ac6",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0,
+      "model": "none"
+    },
+    {
+      "path": ".agent-data/phase3-eval-release/traces/7166e0ef-5c85-4205-a548-25c6d3ad38e5.json",
+      "hash": "69854fc2299a832248822475f061d9f71b863f714954e86319bf89bca041bbda",
+      "config_hash": "a215cb6ab1b93f894f5d25a9d0b1ee00576fe766cd67585ed1cbba5fa5bc6ac6",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0,
+      "model": "none"
+    },
+    {
+      "path": ".agent-data/phase3-eval-release/traces/75a3d8e7-5b5e-5001-a187-5cd259f5e3f9.json",
+      "hash": "b031572ee2d42b0fc0a3084fe5ffa27c8bc5a92e62dfc2a8fe6728d542dffb98",
+      "config_hash": "a215cb6ab1b93f894f5d25a9d0b1ee00576fe766cd67585ed1cbba5fa5bc6ac6",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0,
+      "model": "none"
+    },
+    {
+      "path": ".agent-data/phase3-eval-release/traces/8022aa36-2174-4af5-afe1-ca860bf3cf04.json",
+      "hash": "9bfd18ba245bd803131452efb7c4533521a008d19fdb51a53807915eb3acdb5e",
+      "config_hash": "a215cb6ab1b93f894f5d25a9d0b1ee00576fe766cd67585ed1cbba5fa5bc6ac6",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0,
+      "model": "none"
+    },
+    {
+      "path": ".agent-data/phase3-eval-release/traces/99728563-6d38-4772-9b89-1ca1996f403f.json",
+      "hash": "ae6cb8ae9829ba15f01acbcc81b314affd657574ab91e7ef5f3e4c9d33e4f189",
+      "config_hash": "a215cb6ab1b93f894f5d25a9d0b1ee00576fe766cd67585ed1cbba5fa5bc6ac6",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0,
+      "model": "none"
+    },
+    {
+      "path": ".agent-data/phase3-eval-release/traces/9a9719e2-b6e7-5932-a7d2-19cb130ba14f.json",
+      "hash": "3e4a5906df261b57a74365f301967597080b072d02238c05d3b9ba51dd536be9",
+      "config_hash": "a215cb6ab1b93f894f5d25a9d0b1ee00576fe766cd67585ed1cbba5fa5bc6ac6",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0,
+      "model": "none"
+    },
+    {
+      "path": ".agent-data/phase3-eval-release/traces/9c7f0646-e425-441e-bde9-c375d89aaf04.json",
+      "hash": "5ce399c0d268c81a454868fa79316fb2acbd045ae76cb6c7626e0dbc3173edf6",
+      "config_hash": "a215cb6ab1b93f894f5d25a9d0b1ee00576fe766cd67585ed1cbba5fa5bc6ac6",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0,
+      "model": "none"
+    },
+    {
+      "path": ".agent-data/phase3-eval-release/traces/a689da94-87ed-5a4c-ac32-4e64c4dd415f.json",
+      "hash": "3952e014d04f3e88cb040a29445a7f352a87e85ae85d4e18e84a33c310f21c58",
+      "config_hash": "a215cb6ab1b93f894f5d25a9d0b1ee00576fe766cd67585ed1cbba5fa5bc6ac6",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0,
+      "model": "none"
+    },
+    {
+      "path": ".agent-data/phase3-eval-release/traces/b5f01230-11f3-5fc2-b7e4-1467200aeb59.json",
+      "hash": "d92dd7fed9631d259724e6927cb1d038f4efff7b97280af479cbc472ff4b99c0",
+      "config_hash": "a215cb6ab1b93f894f5d25a9d0b1ee00576fe766cd67585ed1cbba5fa5bc6ac6",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0,
+      "model": "none"
+    },
+    {
+      "path": ".agent-data/phase3-eval-release/traces/bb3a52fc-1da7-4a45-8c97-cc0fb57949c0.json",
+      "hash": "846fbd951b860b41e426b383c40fcbd216db7282b90dbbe9b80cee14f3036592",
+      "config_hash": "a215cb6ab1b93f894f5d25a9d0b1ee00576fe766cd67585ed1cbba5fa5bc6ac6",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0,
+      "model": "none"
+    },
+    {
+      "path": ".agent-data/phase3-eval-release/traces/bc3f9246-d64f-4247-9223-3308ef3686bf.json",
+      "hash": "3553c228ee8065ff135869b53078ec7d11d338289be94b25b2563165ebfd167a",
+      "config_hash": "a215cb6ab1b93f894f5d25a9d0b1ee00576fe766cd67585ed1cbba5fa5bc6ac6",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0,
+      "model": "none"
+    },
+    {
+      "path": ".agent-data/phase3-eval-release/traces/bdff7095-0e73-5c70-a342-6a08a6a81b93.json",
+      "hash": "a477f3eb112c89353080935abc9fdef18f3acd49590a5c747072ef44a1d3c32b",
+      "config_hash": "a215cb6ab1b93f894f5d25a9d0b1ee00576fe766cd67585ed1cbba5fa5bc6ac6",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0,
+      "model": "none"
+    },
+    {
+      "path": ".agent-data/phase3-eval-release/traces/c90619a4-8555-4235-8555-e9d390a6ec37.json",
+      "hash": "a9f1b68020fc24039f8058bbe03d0d457a1cf6ac13c0e7d9026c75b3447e4228",
+      "config_hash": "a215cb6ab1b93f894f5d25a9d0b1ee00576fe766cd67585ed1cbba5fa5bc6ac6",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0,
+      "model": "none"
+    },
+    {
+      "path": ".agent-data/phase3-eval-release/traces/ff6313e7-7b74-4bdd-9eae-57f9fd02bdcc.json",
+      "hash": "6264eb080687f926aeed6d6c91d14a5c12825a13fd28746ac591f96d6f6bed40",
+      "config_hash": "a215cb6ab1b93f894f5d25a9d0b1ee00576fe766cd67585ed1cbba5fa5bc6ac6",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0,
+      "model": "none"
+    }
+  ],
+  "passed": true,
+  "quality_claim": false,
+  "reviewed_real_workflows": 0,
+  "artifact_directory": ".agent-data/phase3-eval-release"
+}

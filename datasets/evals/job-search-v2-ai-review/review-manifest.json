@@ -1,0 +1,26 @@
+{
+  "reviewer": "Codex (AI review; not human)",
+  "review_date": "2026-09-06",
+  "source_dataset_sha256": "bb1290c71713861dfb6ba5da022d076c299edd2940f3c2e72bef61c9d4f0a044",
+  "review_dataset_sha256": "8a5195a79d4a71e45c6b934554d4a0f87d9d34c04b5878ad2eb3980dee7da111",
+  "adjudications_sha256": "4cef7780a02e8a0fbf492ac4ef9e623632bb1bce345bdbf82a8d366a3851591a",
+  "source_report_sha256": "5f7a7bf66b9c9ee5d54afb4667fc19fdabc75afdadb3722d6daf3a1a40ba460d",
+  "original_queries": 150,
+  "included_queries": 134,
+  "pending_queries": 16,
+  "job_count": 30,
+  "label_rows": 4500,
+  "grade_counts": {
+    "3": 196,
+    "0": 3488,
+    "2": 163,
+    "1": 173,
+    "pending": 480
+  },
+  "review_status": "AI adjudication; human confirmation required",
+  "blinding": "Not strictly blind: original reports and proposed labels were seen during setup. Subsequent scoring used full JDs and query criteria without ranking scores. review-packet.json omits ranks, model names and labels for a future independent review.",
+  "metrics_scope": "Only fully adjudicated queries enter this AI-review experiment; original query text, requests, as_of and jobs unchanged. Pending cases excluded rather than treated as negatives.",
+  "deduplication": "Exact identical requests have identical labels. Template variants retained for historical paired comparison, not independent real-user samples.",
+  "reviewed_dataset_ready": false,
+  "production_release_ready": false
+}

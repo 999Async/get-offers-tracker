@@ -31,6 +31,7 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+.dev.vars*
 
 # vercel
 .vercel
@@ -42,3 +43,20 @@ yarn-error.log*
 
 # Local Sites deployment metadata
 /.openai/hosting.json
+
+# Local browser-extension profile data
+/browser-extension/getoffers-profile.json
+/browser-extension/profile.local.json
+/browser-extension.zip
+
+# Local Python Agent environments and restricted Run Trace data
+**/.venv/
+**/__pycache__/
+**/.pytest_cache/
+**/.ruff_cache/
+**/*.egg-info/
+**/.agent-data/
+.firecrawl/
+
+# Local UI review captures may contain the signed-in account label.
+/.impeccable/review/

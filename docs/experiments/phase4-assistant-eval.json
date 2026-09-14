@@ -1,0 +1,74 @@
+{
+  "date": "2026-09-10",
+  "scope": "Phase 4 local assistant evaluation and human-review tooling only",
+  "execution_mode": "scripted",
+  "provenance": "synthetic",
+  "dataset_version": "assistant-synthetic-v1",
+  "dataset_hash": "776f9d6e6ece3c12f6d83bfe6a95fb2d389eb92173b3e7aba236587296127b3a",
+  "runtime_source_hash": "1e22bcbb4ad95e3dd7ee22bea4f9b64c2dd768381fecf6458c8e024fa1ddf77e",
+  "dependency_lock_hash": "65c38fe239b0c263433faa633e029d975677c1b028477f9f8d98badedee8287b",
+  "grader_version": "assistant-contract-and-human-review-v1",
+  "runs": [
+    {
+      "report_hash": "fca7f88f02d4f76f393b9eaa260733ed2c53a8152498cdf8410407a952da90c0",
+      "summary": {
+        "total": 8,
+        "contracts_passed": 8,
+        "duration_p50_ms": 12.039459004881792,
+        "duration_p95_ms": 45.70904199499637,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": null
+      }
+    },
+    {
+      "report_hash": "9ea5074345a1bf48f4e8767b61de62a29331f225469f300146661f35f776ad86",
+      "summary": {
+        "total": 8,
+        "contracts_passed": 8,
+        "duration_p50_ms": 11.668624996673316,
+        "duration_p95_ms": 45.782999994116835,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": null
+      }
+    }
+  ],
+  "paired_cases": 8,
+  "human_review_deltas": {
+    "fact_support": {
+      "paired_reviewed_cases": 0,
+      "excluded_pending_or_na": 8,
+      "pass_rate_delta": null
+    },
+    "usefulness": {
+      "paired_reviewed_cases": 0,
+      "excluded_pending_or_na": 8,
+      "pass_rate_delta": null
+    },
+    "jd_fit": {
+      "paired_reviewed_cases": 0,
+      "excluded_pending_or_na": 8,
+      "pass_rate_delta": null
+    }
+  },
+  "review_status": "pending",
+  "production_release": "not_evaluated",
+  "quality_claim": false,
+  "real_model_runs": 0,
+  "verification": {
+    "python_full_regression_before_last_added_case": {
+      "passed": 201,
+      "skipped": 3
+    },
+    "assistant_python_latest": 50,
+    "assistant_api_node": 4,
+    "ruff": "passed",
+    "trace_replay": "verified without model calls"
+  },
+  "local_artifacts": {
+    "report": ".agent-data/assistant-eval/phase4-a/report.json",
+    "review_csv": ".agent-data/assistant-eval/phase4-a/review.csv",
+    "comparison": ".agent-data/assistant-eval/phase4-comparison.json"
+  }
+}

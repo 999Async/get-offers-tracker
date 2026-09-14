@@ -1,0 +1,6 @@
+{
+  "config_id": "phase0-baseline",
+  "max_steps": 8,
+  "max_no_progress_steps": 2,
+  "model_version": "fake-model-v1"
+}
